@@ -1,0 +1,1 @@
+This is a course website for CBS592 a course I teach at Hong Kong Polytechnic University. The contents are modified from original content created by Stephen Politzer-Ahles who made them freely available.
