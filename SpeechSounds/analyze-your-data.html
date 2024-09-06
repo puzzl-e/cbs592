@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head><meta charset="utf-8">
+	<title>Analyze your data</title>
+	<link href="../sjpa_stylesheet.css" rel="stylesheet" type="text/css" /><script type="text/javascript"
+		src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+</head>
+<body>
+<h2>Analyze your data (1 hour)</h2>
+
+<p class="centercol"><a href="index.html">&crarr; Back to module homepage</a></p>
+
+<p class="centercol">If you record yourself saying &quot;pa&quot; and &quot;ba&quot; many times, and measure the voice onset time every time, you will probably notice that it varies a lot. Your &quot;pa&quot; won&#39;t have the same voice onset time every time you say it. Maybe sometimes it&#39;s 85 milliseconds, sometimes 78 milliseconds, sometimes 92.3 milliseconds, etc.</p>
+
+<p class="centercol">In fact, voice onset time has a wide range. When it&#39;s really short (like 1 or 2 milliseconds), that might obviously sound like &quot;ba&quot;. When it&#39;s really long (like 150 milliseconds), that might obviously sound like &quot;pa&quot;. But what will your mind do when it hears voice onset times that are somewhere else in this range? What will a voice onset time of 25 milliseconds sound like? What about a voice onset time of 43 milliseconds? What about 57 milliseconds?</p>
+
+<p class="centercol">That&#39;s what this experiment was about. I used Praat to modify the &quot;pa&quot; that I recorded. While &quot;pa&quot; naturally has a pretty long voice onset time, I can cut parts of it out to make it shorter and shorter. So I artificially created sounds with various voice onset times: 0 milliseconds, 10 milliseconds, 20 milliseconds, etc. I had you listen to those sounds and decide whether they are &quot;ba&quot; or &quot;pa&quot;. In this way, we can examine how you understand sounds differently depending on their voice onset time. We might be able to find out how much voice onset time a sound needs for you to think it sounds like &quot;pa&quot;.</p>
+
+<p class="centercol">As we discussed before, sounds with short voice onset time sound like &quot;ba&quot;, and sounds like long voice onset time sound like &quot;pa&quot;. So we might predict that, the longer the voice onset time is, the more it sounds like &quot;pa&quot;. If I graph how often you chose &quot;pa&quot; for each voice onset time, I might expect that for sounds with longer voice onset time you chose &quot;pa&quot; more often, as shown in the graph below:</p>
+
+<center><img alt="Graph showing how often you choose &quot;pa&quot;, as a function of the VOT of the sound you heard. When VOT is low, the percentage of times you choose &quot;pa&quot; is low. As VOT increases, percentage of time you chose &quot;pa&quot; steadily increases, making a straight, upward-sloping line." src="linear.png" title="Predictions for identification task" width="40%" /></center>
+
+<p class="centercol">Your job now is to analyze your data to see if this prediction was correct. For each Voice Onset Time you heard, you will count up how many times you chose &quot;pa&quot;, and make a graph like this. When you are ready, do the task below.</p>
+
+<center><button class="collapsible">Calculate your results</button>
+
+<div class="content">
+<p>Go back to the results you recorded when you did the experiment. You should have 28 responses (all either &quot;ba&quot; or &quot;pa&quot;.</p>
+
+<ul>
+	<li>Items number 3, 6, 12, and 26 were recordings with 0 ms of VOT.</li>
+	<li>Items number 9, 14, 23, and 28 were recordings with 10 ms of VOT.</li>
+	<li>Items number 19, 20, 21, and 24 were recordings with 20 ms of VOT.</li>
+	<li>Items number 1, 7, 10, and 15 were recordings with 30 ms of VOT.</li>
+	<li>Items number 2, 11, 25, and 27 were recordings with 40 ms of VOT.</li>
+	<li>Items number 5, 13, 17, and 18 were recordings with 50 ms of VOT.</li>
+	<li>Items number 4, 8, 16, and 22 were recordings with 60 ms of VOT.</li>
+</ul>
+
+<p>For each VOT, count how many times you wrote &quot;pa&quot;. For example, for 30 ms, check #1, #7, #10, and #15. If you wrote &quot;pa&quot; for #7 and &quot;ba&quot; for the other three, then your answer is &quot;1&quot; (you wrote &quot;pa&quot; one time for the 30-ms tokens.</p>
+
+<p>Then, convert these responses into percentage (out of 4). 0 out of 4 is 0%; 1 out of 4 is 25%; 2 out of 4 is 50%; 3 out of 4 is 75%; and 4 out of 4 is 100%.</p>
+
+<p>When you&#39;ve finished analyzing your results, you should put them into our&nbsp;<a href="https://docs.google.com/spreadsheets/d/1R1TTWSjnyjJtiIn_Ca227u0fxfC-LW2l5Zrb4idq480/edit?usp=sharing">shared Google spreadsheet</a>.&nbsp;After other people have completed this task, you can compare your results to theirs.</p>
+
+<p>Finally, answer the question: <strong>Did your results match the prediction I described before? If your results were different than the prediction, describe how they are different.</strong></p>
+</div>
+</center>
+
+<p class="centercol">When you have finished these activities, continue to the next section of the module: &quot;<a href="the-concept-of-categorical-perception.html">The concept of categorical perception</a>&quot;.</p>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<hr />
+<p class="mini">by Eric Pelzl, modified from content originally created by&nbsp;<a href="https://www.polyu.edu.hk/cbs/sjpolit/">Stephen Politzer-Ahles</a>. Last modified on 2023-09-18. CC-BY-4.0.</p>
+</body>
+</html>
