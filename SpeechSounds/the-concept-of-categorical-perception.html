@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head><meta charset="utf-8">
+	<title>The concept of categorical perception</title>
+	<link href="../sjpa_stylesheet.css" rel="stylesheet" type="text/css" /><script type="text/javascript"
+		src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+</head>
+<body>
+<h2>The concept of categorical perception (0.5 hours)</h2>
+
+<p class="centercol"><a href="index.html">&crarr; Back to module homepage</a></p>
+
+<p class="centercol">In this kind of experiment, people&#39;s results often look more like this:</p>
+
+<center><img alt="Graph showing how often you choose &quot;pa&quot;, as a function of the VOT of the sound you heard. When VOT is low, the percentage of times you choose &quot;pa&quot; is low. As VOT increases, percentage remains low at first, but at 20-30 milliseconds it sharply jumps up to 100%, where it remains for higher VOTs." src="categorical.png" title="Possible results for the identification task" width="40%" /></center>
+
+<p class="centercol">This is quite different than the prediction I outlined. Recall that I predicted a straight line: when voice onset time gets longer, people&#39;s likelihood of choosing &quot;pa&quot; would get steadily higher. But that is clearly not what happened if the result looks like this. Instead, sometimes longer voice onset time doesn&#39;t matter; for example, in the image above, a sound with 10 milliseconds of voice onset time is no more likely to be heard as &quot;pa&quot; than a sound with 0 milliseconds of voice onset time is (both are 0% likely to be rated &quot;pa&quot;). On the other hand, sometimes voice onset time has a huge impact; a sound with 20 milliseconds of voice onset time is only 25% likely to be heard as &quot;pa&quot;, but when voice onset time goes up to 30 milliseconds the &quot;pa&quot; response rate jumps up to 100%!</p>
+
+<p class="centercol">We often refer to this pattern as &quot;categorical perception&quot;. This means that when you hear sounds, your mind organizes them into categories. It seems that for some voice onset times, you almost always hear the sound as &quot;ba&quot;, and for other voice onset times you almost always hear the sound as &quot;pa&quot;. There is not much in the middle.</p>
+
+<p class="centercol">The idea here is that we rarely hear a sound and think &quot;Hm, that was 72.3% like a &#39;ba&#39; but 27.7% like a &#39;pa&#39;.&quot; Rather, we hear a sound and think, &quot;That was a &#39;ba&#39;!&quot;. Even if it wasn&#39;t a <em>perfect</em> &quot;ba&quot;, our mind still decides it was a &quot;ba&quot; and then places it into a &quot;category&quot; with all the other &quot;ba&quot; sounds we have ever heard. Therefore, our mind doesn&#39;t care very much about whether the voice onset time was 12 milliseconds, 17.35 milliseconds, or whatever. Our mind just cares about whether the sound was a &quot;ba&quot; or a &quot;pa&quot;.</p>
+
+<p class="centercol">In theory, your mind has decided on a <em>categorical boundary</em>: some voice onset time that divides &quot;ba&quot; sounds and &quot;pa&quot; sounds. When you hear a sound, you automatically check what the voice onset time is, and compare it to your categorical boundary. Almost any sound with a voice onset time shorter than the categorical boundary will sound like &quot;ba&quot; to you. And almost any sound with a voice onset time longer than the categorical boundary will sound like &quot;pa&quot; to you. In my graph above, the categorical boundary seems to be somewhere between 20 milliseconds and 30 milliseconds: VOTs around 20 milliseconds or less are almost always treated as &quot;ba&quot;, and around 30 milliseconds or more are almost always treated as &quot;pa&quot;.</p>
+
+<center><button class="collapsible">Locating the categorical boundary</button>
+
+<div class="content">
+<p>Based on your results, where do you think <strong>your</strong> categorical boundary between &quot;ba&quot; and &quot;pa&quot; is?</p>
+</div>
+<button class="collapsible">Reflecting on the claim about categorical perception</button>
+
+<div class="content">
+<p>I claimed that these results prove that we aren&#39;t sensitive to the small differences between different voice onset times, but we instead lump sounds into categories.</p>
+
+<p>Do you agree with this claim, or do you have any criticisms? Are there any reasons you think the results of the test might not prove that? Do you think there are any problems or limitations with the kind of experiment we did?</p>
+</div>
+</center>
+
+<p class="centercol">When you have finished these activities, you&#39;re all set for the next class.</p>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<hr />
+<p class="mini">by Eric Pelzl, modified from content originally created by&nbsp;<a href="https://www.polyu.edu.hk/cbs/sjpolit/">Stephen Politzer-Ahles</a>. Last modified on 2023-09-18. CC-BY-4.0.</p>
+</body>
+</html>
