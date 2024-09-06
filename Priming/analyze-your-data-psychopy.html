@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head><meta charset="utf-8">
+	<title>Analyze your data</title>
+	<link href="../sjpa_stylesheet.css" rel="stylesheet" type="text/css" /><script type="text/javascript"
+		src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+</head>
+<body>
+<h2>Analyze your data [PsychoPy] (2 hours)</h2>
+
+<p class="centercol"><a href="index.html">&crarr; Back to module homepage</a></p>
+
+<p class="centercol">In the previous task, you might have noticed that the word pairs with codes in the 100s were always two words whose meanings are related to each other, such as BUTTERFLY followed by BEE. On the other hand, the word pairs with codes in the 200s were always two words whose meanings are not related to each other, such as EDIT followed by BEE. This is the most important aspect of a priming experiment. A priming experiment is always about comparing how people process words that come after related words, vs. words that come after unrelated words.</p>
+
+<p class="centercol">When we talk about priming experiments, we call the first word in the pair (e.g., BUTTERFLY or EDIT) the <strong>prime</strong>, and the second word (the word that the participant has to respond to by pressing a button) the <strong>target</strong>. So, for example, when someone in the experiment sees BUTTERFLY and then BEE, we would say they saw the target &quot;BEE&quot; with a <em>related</em> prime. When someone in the experiment sees EDIT and BEE, we would say they saw the target &quot;BEE&quot; with an <em>unrelated</em> prime.</p>
+
+<p class="centercol">In priming experiments we often want to know <em>how quickly</em> people respond to different kinds of targets (e.g., how quickly they respond to targets that came after <em>related</em> primes, and how quickly they respond to targets that came after <em>unrelated</em> primes). So, to do that, it&#39;s time for us to analyze your data.</p>
+
+<p class="centercol">Go to the place on your computer where you originally saved your .psyexp and the other files. You should see a new folder there (&#39;data&#39;), now that you have finished the experiment. In that folder, there will be a bunch of different files. The most important is an .csv file which has the participant ID you used when you did the experiment. Open this file. You should open it with a spreadsheet programme like Excel.</p>
+
+<p class="centercol">There will be a bunch of rows and columns of words and numbers, the important part starts about 20 rows down (you&#39;ll see about 9 rows that are the practice trials, and then below that is the experiment trials we are interested in). Here&#39;s a picture of what it looks like in Excel on my computer (some of the important rows circled in red).</p>
+
+<p class="centercol"><img alt="" src="/cbs592/Priming/example-data1.png" style="width: 600px; height: 281px;" /></p>
+
+<p class="centercol">The real data that we are interested in is two columns of numbers, but they are in columns <em>wayyyy</em> to the right in the spreadsheet. You&#39;ll need to scroll to the right until you find two columns labeled &#39;response.key&#39; and &#39;response.rt&#39;. These columns show how you responded to the words. First, whether you pressed the &#39;J&#39; (yes) or the &#39;F&#39; (no) key, and then how quickly you to pressed that key (time in milliseconds). Again, there&#39;s an image of what this looks like in my data.</p>
+
+<p class="centercol"><img alt="" src="/cbs592/Priming/example-data2.png" style="width: 600px; height: 213px;" /></p>
+
+<p class="centercol">So, now you need to get those two response columns and pair them with the words and condition codes we saw earlier. One way to do this is to select all the columns between them, and then hide (or delete) those columns. Again, a&nbsp; few images from my data to show how I did this.</p>
+
+<p class="centercol"><img alt="" src="/cbs592/Priming/example-data3.png" style="width: 600px; height: 275px;" /></p>
+
+<p class="centercol"><img alt="" src="/cbs592/Priming/example-data4.png" style="width: 600px; height: 287px;" /></p>
+
+<p class="centercol"><img alt="" src="/cbs592/Priming/example-data5.png" style="width: 300px; height: 366px;" /></p>
+
+<p class="centercol">Now you&#39;ve got the data you&#39;re interested in all together, you can start to interpret it. Every line of data will have two important numbers. The first number is a &quot;code&quot;, matching the codes you saw before. This code lets us know what word the person was responding to for any given piece of data. For example, the first row of data you see in my data in the picture is 115, which refers to the first experiment trial I did. Remember that we are interested in the lines whose codes are in the 100s (the targets that came after <strong>related</strong> primes) and the lines whose codes are in the 200s (the targets that came after&nbsp;<strong>unrelated</strong> primes).</p>
+
+<p class="centercol">The second number you see in each line is the amount of time it took (how many <em>milliseconds</em>&mdash;a millisecond [毫秒] is 1/1000 of a second) for you to respond to that word (for example, for &#39;wither&#39; my response was 0.673--or 673 milliseconds). The higher this number is, the longer it took you to respond.</p>
+
+<p class="centercol">There is one extra complication we need to deal with. Some trials may have the WRONG response. That is, for a real word, the response is &#39;f&#39; (not a real word), or for a nonword the response is &#39;j&#39; (a real word).&nbsp;We have to decide what to do with these incorrect responses. One option is to just delete them&mdash;maybe you feel like these &quot;incorrect&quot; responses are not a valid reflection of normal language comprehension (for example, maybe you made a mistake on that word because you weren&#39;t paying close attention) and thus should not be included in the final result. Another option is you can just ignore whether the response was correct or incorrect. Either option is ok, you should do whichever you think is the most appropriate.</p>
+
+<p class="centercol">Now we are finally ready to analyze the data! I want you to calculate the <em>average</em> amount of time it took you to respond to targets that had related primes, and the <em>average</em> amount of time it took you to respond to targets that had unrelated primes. (There are many ways to do this; you can do it by hand or using a calculator; or if you have good computer skills, you can do it in Excel or even by writing a script in a programming language. In the &quot;Building a priming experiment&quot; module we will learn some efficient ways to analyze these kinds of data, but for now it&#39;s ok to do a low-tech way.) Remember to convert the time into milliseconds (you can just report three digits if the average is below 1 second, or four digits if it&#39;s longer than 1 second, e.g., 805 or 1020).</p>
+
+<p class="centercol">Once you have calculated your average for related and unrelated primes, add those results to this&nbsp;<a href="https://docs.google.com/spreadsheets/d/1vCkgeN5bi1DvukTXNzdYVRm7CNJyxJP11j5hoOTgg8c/edit?usp=sharing">shared Google spreadsheet</a>. By comparing with everyone&#39;s results, this will be a useful way to see the general trend across multiple people (for example, if 90% of people were faster for &#39;related&#39; than for &#39;unrelated&#39; and 10% were faster for &#39;unrelated&#39; than &#39;related&#39;), which is important in any empirical research.</p>
+
+<p class="centercol">When you have finished, continue to the reflection questions below.</p>
+
+<center><button class="collapsible">Make a conclusion about the results</button>
+
+<div class="content">
+<p>Look at all the results entered so far in our Google spreadsheet. Based on the results so far, which kinds of targets would you conclude are responded to faster? <strong>Submit your answer via Blackboard</strong>&nbsp;(There may be a lot of different results on the spreadsheet. To make a conclusion, you might want to look at the average for related [by averaging across all students&#39; &quot;related&quot; reaction times], compared to the average for unrelated [by averaging across all students&#39; &quot;unrelated&quot; reaction times]. Or, you might want to count how many people were faster for related, and how many people were faster for unrelated.)&nbsp;</p>
+</div>
+<button class="collapsible">Try to explain the results</button>
+
+<div class="content">
+<p>Thinking back to your answer about the previous question (which kind of target is responded to faster), why do you think this happens? What happens in a person&#39;s mind to make this happen? <strong>Submit your answers via Blackboard</strong></p>
+
+<p>As with most questions in this class, you don&#39;t need to consult any other sources for this or try to search online for the &quot;right&quot; answer. There is no right or wrong answer to this question; I&#39;m more interested in seeing your own ideas that you can come up with.</p>
+</div>
+</center>
+
+<p class="centercol">When you have finished these activities, continue to the next section of the module: &quot;<a href="interim-summary-about-priming.html">Interim summary about priming</a>&quot; (to be COMPLETED BEFORE NEXT CLASS).</p>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<hr />
+<p class="mini">modified by Eric Pelzl; original content by <a href="https://www.polyu.edu.hk/cbs/sjpolit/">Stephen Politzer-Ahles</a>. Last modified on 2024-01-25. CC-BY-4.0.</p>
+</body>
+</html>
