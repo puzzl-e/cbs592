@@ -1,0 +1,503 @@
+7.9224 	DEBUG 	Fullscreen settings ignored as running in pilot mode.
+7.9235 	INFO 	Loaded monitor calibration from ['2023_09_17 13:39']
+8.0797 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x159e73010>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x159e73070>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=False, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x159e1f070>, multiSample=False, name='window1', numSamples=2, pos=[880.0, 420.0], screen=0, size=array([1600, 1200]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+8.0798 	EXP 	window1: backgroundImage = ''
+8.0798 	EXP 	window1: backgroundFit = 'none'
+8.0877 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.0882 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.0887 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.0894 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.0900 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.0903 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.0908 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.0915 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.0916 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.0918 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.0923 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.0927 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.0931 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.0936 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.0940 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.0945 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.0950 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.0952 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.0954 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.0961 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.0963 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.0965 	DEBUG 	Uploading Texture Font fontname to graphics card
+8.0994 	DEBUG 	Upload of Texture Font fontname complete
+8.1036 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.1044 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.1050 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.1051 	DEBUG 	Uploading Texture Font fontname to graphics card
+8.1070 	DEBUG 	Upload of Texture Font fontname complete
+8.1083 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+8.1083 	EXP 	window1: recordFrameIntervals = False
+8.3385 	EXP 	window1: recordFrameIntervals = True
+9.1893 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+9.1979 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.1986 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.1998 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.2013 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.2026 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.2038 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.2043 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.2054 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.2067 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.2078 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.2082 	DEBUG 	Uploading Texture Font fontname to graphics card
+9.2126 	DEBUG 	Upload of Texture Font fontname complete
+11.4798 	INFO 	keyboard.Keyboard is using ptb backend.
+11.7983 	INFO 	keyboard.Keyboard is using ptb backend.
+12.1169 	INFO 	keyboard.Keyboard is using ptb backend.
+12.4355 	INFO 	keyboard.Keyboard is using ptb backend.
+12.7543 	INFO 	keyboard.Keyboard is using ptb backend.
+13.0728 	INFO 	keyboard.Keyboard is using ptb backend.
+13.3914 	INFO 	keyboard.Keyboard is using ptb backend.
+13.7134 	INFO 	keyboard.Keyboard is using ptb backend.
+14.0323 	INFO 	keyboard.Keyboard is using ptb backend.
+14.3508 	INFO 	keyboard.Keyboard is using ptb backend.
+14.6697 	INFO 	keyboard.Keyboard is using ptb backend.
+14.9882 	INFO 	keyboard.Keyboard is using ptb backend.
+14.9882 	EXP 	Jiantizi1-LDT: status = STARTED
+15.0197 	EXP 	Created instructions2Disp = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instructions2Disp', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+15.0239 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+15.0280 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+15.0324 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_3', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+15.0398 	EXP 	Created text_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_4', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+15.0440 	EXP 	Created text_5 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_5', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+15.0471 	EXP 	Created text_6 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_6', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+15.0494 	EXP 	Created text_7 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_7', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Press SPACE BAR to start the practice.', units='height', win=Window(...), wrapWidth=1)
+15.0519 	EXP 	Created prFixationDisp = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='prFixationDisp', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+15.0523 	EXP 	Created prPrimeDisp = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='prPrimeDisp', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+15.0526 	EXP 	Created prTargetDisp = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='prTargetDisp', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+15.0571 	EXP 	Created readyDisp = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='readyDisp', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+15.0581 	EXP 	Created fixationDisp = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='fixationDisp', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+15.0585 	EXP 	Created primeDisp = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='primeDisp', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+15.0589 	EXP 	Created targetDisp = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='targetDisp', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+15.0609 	EXP 	Created completeMessage = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='completeMessage', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='You have finished the experiment!\n', units='height', win=Window(...), wrapWidth=1)
+0.0082 	INFO 	Keyboard events cleared
+0.0082 	EXP 	instructions2Disp: autoDraw = True
+1.4197 	DATA 	Keypress: space
+1.4227 	INFO 	Keyboard events cleared
+1.4226 	WARNING 	t of last frame was 91.50ms (=1/10)
+1.4226 	EXP 	instructions2Disp: autoDraw = False
+1.4226 	EXP 	text: autoDraw = True
+1.7525 	DATA 	Keypress: space
+1.7552 	INFO 	Keyboard events cleared
+1.7551 	EXP 	text: autoDraw = False
+1.7551 	EXP 	text_2: autoDraw = True
+1.9674 	DATA 	Keypress: space
+1.9703 	INFO 	Keyboard events cleared
+1.9702 	EXP 	text_2: autoDraw = False
+1.9702 	EXP 	text_3: autoDraw = True
+2.2397 	DATA 	Keypress: space
+2.2439 	INFO 	Keyboard events cleared
+2.2438 	EXP 	text_3: autoDraw = False
+2.2438 	EXP 	text_4: autoDraw = True
+2.5231 	DATA 	Keypress: space
+2.5272 	INFO 	Keyboard events cleared
+2.5271 	EXP 	text_4: autoDraw = False
+2.5271 	EXP 	text_5: autoDraw = True
+2.8393 	DATA 	Keypress: space
+2.8439 	INFO 	Keyboard events cleared
+2.8438 	EXP 	text_5: autoDraw = False
+2.8438 	EXP 	text_6: autoDraw = True
+3.1390 	DATA 	Keypress: space
+3.1443 	INFO 	Keyboard events cleared
+3.1443 	EXP 	text_6: autoDraw = False
+3.1443 	EXP 	text_7: autoDraw = True
+3.5964 	DEBUG 	Read excel file with openpyxl: Jianti1Practice.xlsx
+3.5972 	EXP 	Imported Jianti1Practice.xlsx as conditions, 9 conditions, 3 params
+3.5984 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'prime': '背负', 'target': '单词', 'condition': 'wrd', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+3.6008 	DATA 	Keypress: space
+3.6047 	WARNING 	t of last frame was 20.94ms (=1/47)
+3.6047 	EXP 	text_7: autoDraw = False
+4.0856 	EXP 	prFixationDisp: autoDraw = True
+5.0893 	EXP 	prFixationDisp: autoDraw = False
+5.0893 	EXP 	prFixationDisp: autoDraw = False
+5.0893 	EXP 	prPrimeDisp: height = 0.05
+5.0893 	EXP 	prPrimeDisp: height = 0.05
+5.0893 	EXP 	prPrimeDisp: height = 0.05
+5.0893 	EXP 	prPrimeDisp: text = '背负'
+5.0893 	EXP 	prPrimeDisp: autoDraw = True
+5.5877 	INFO 	Keyboard events cleared
+5.5876 	EXP 	prPrimeDisp: autoDraw = False
+5.5876 	EXP 	prPrimeDisp: autoDraw = False
+5.5876 	EXP 	prTargetDisp: height = 0.05
+5.5876 	EXP 	prTargetDisp: height = 0.05
+5.5876 	EXP 	prTargetDisp: height = 0.05
+5.5876 	EXP 	prTargetDisp: text = '单词'
+5.5876 	EXP 	prTargetDisp: autoDraw = True
+6.0144 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'prime': '广告', 'target': '我们', 'condition': 'wrd', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+6.0172 	DATA 	Keypress: j
+6.0198 	EXP 	prTargetDisp: autoDraw = False
+6.5114 	EXP 	prFixationDisp: autoDraw = True
+7.5041 	EXP 	prFixationDisp: autoDraw = False
+7.5041 	EXP 	prFixationDisp: autoDraw = False
+7.5041 	EXP 	prPrimeDisp: height = 0.05
+7.5041 	EXP 	prPrimeDisp: height = 0.05
+7.5041 	EXP 	prPrimeDisp: height = 0.05
+7.5041 	EXP 	prPrimeDisp: text = '广告'
+7.5104 	EXP 	prPrimeDisp: autoDraw = True
+8.0050 	EXP 	prPrimeDisp: autoDraw = False
+8.0050 	EXP 	prPrimeDisp: autoDraw = False
+8.0050 	EXP 	prTargetDisp: height = 0.05
+8.0050 	EXP 	prTargetDisp: height = 0.05
+8.0050 	EXP 	prTargetDisp: height = 0.05
+8.0050 	EXP 	prTargetDisp: text = '我们'
+8.0109 	INFO 	Keyboard events cleared
+8.0108 	EXP 	prTargetDisp: autoDraw = True
+8.2976 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'prime': '大会', 'target': '涂北', 'condition': 'non', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+8.3003 	DATA 	Keypress: j
+8.3038 	EXP 	prTargetDisp: autoDraw = False
+8.7947 	EXP 	prFixationDisp: autoDraw = True
+9.7875 	EXP 	prFixationDisp: autoDraw = False
+9.7875 	EXP 	prFixationDisp: autoDraw = False
+9.7875 	EXP 	prPrimeDisp: height = 0.05
+9.7875 	EXP 	prPrimeDisp: height = 0.05
+9.7875 	EXP 	prPrimeDisp: height = 0.05
+9.7875 	EXP 	prPrimeDisp: text = '大会'
+9.7937 	EXP 	prPrimeDisp: autoDraw = True
+10.2856 	EXP 	prPrimeDisp: autoDraw = False
+10.2856 	EXP 	prPrimeDisp: autoDraw = False
+10.2856 	EXP 	prTargetDisp: height = 0.05
+10.2856 	EXP 	prTargetDisp: height = 0.05
+10.2856 	EXP 	prTargetDisp: height = 0.05
+10.2856 	EXP 	prTargetDisp: text = '涂北'
+10.2939 	INFO 	Keyboard events cleared
+10.2939 	EXP 	prTargetDisp: autoDraw = True
+10.9813 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'prime': '效果', 'target': '国家', 'condition': 'wrd', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+10.9841 	DATA 	Keypress: f
+10.9876 	EXP 	prTargetDisp: autoDraw = False
+11.4780 	EXP 	prFixationDisp: autoDraw = True
+12.4712 	EXP 	prFixationDisp: autoDraw = False
+12.4712 	EXP 	prFixationDisp: autoDraw = False
+12.4712 	EXP 	prPrimeDisp: height = 0.05
+12.4712 	EXP 	prPrimeDisp: height = 0.05
+12.4712 	EXP 	prPrimeDisp: height = 0.05
+12.4712 	EXP 	prPrimeDisp: text = '效果'
+12.4775 	EXP 	prPrimeDisp: autoDraw = True
+12.9698 	EXP 	prPrimeDisp: autoDraw = False
+12.9698 	EXP 	prPrimeDisp: autoDraw = False
+12.9698 	EXP 	prTargetDisp: height = 0.05
+12.9698 	EXP 	prTargetDisp: height = 0.05
+12.9698 	EXP 	prTargetDisp: height = 0.05
+12.9698 	EXP 	prTargetDisp: text = '国家'
+12.9772 	INFO 	Keyboard events cleared
+12.9771 	EXP 	prTargetDisp: autoDraw = True
+13.6649 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'prime': '外界', 'target': '土背', 'condition': 'non', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+13.6674 	DATA 	Keypress: j
+13.6709 	EXP 	prTargetDisp: autoDraw = False
+14.1613 	EXP 	prFixationDisp: autoDraw = True
+15.1554 	EXP 	prFixationDisp: autoDraw = False
+15.1554 	EXP 	prFixationDisp: autoDraw = False
+15.1554 	EXP 	prPrimeDisp: height = 0.05
+15.1554 	EXP 	prPrimeDisp: height = 0.05
+15.1554 	EXP 	prPrimeDisp: height = 0.05
+15.1554 	EXP 	prPrimeDisp: text = '外界'
+15.1613 	EXP 	prPrimeDisp: autoDraw = True
+15.6538 	EXP 	prPrimeDisp: autoDraw = False
+15.6538 	EXP 	prPrimeDisp: autoDraw = False
+15.6538 	EXP 	prTargetDisp: height = 0.05
+15.6538 	EXP 	prTargetDisp: height = 0.05
+15.6538 	EXP 	prTargetDisp: height = 0.05
+15.6538 	EXP 	prTargetDisp: text = '土背'
+15.6604 	INFO 	Keyboard events cleared
+15.6603 	EXP 	prTargetDisp: autoDraw = True
+16.5142 	EXP 	New trial (rep=0, index=5): <Trial 5 (5 in rep 0) data={'prime': '庆典', 'target': '糖雨', 'condition': 'non', 'thisN': 5, 'thisTrialN': 5, 'thisRepN': 0}>
+16.5167 	DATA 	Keypress: f
+16.5201 	EXP 	prTargetDisp: autoDraw = False
+17.0115 	EXP 	prFixationDisp: autoDraw = True
+18.0034 	EXP 	prFixationDisp: autoDraw = False
+18.0034 	EXP 	prFixationDisp: autoDraw = False
+18.0034 	EXP 	prPrimeDisp: height = 0.05
+18.0034 	EXP 	prPrimeDisp: height = 0.05
+18.0034 	EXP 	prPrimeDisp: height = 0.05
+18.0034 	EXP 	prPrimeDisp: text = '庆典'
+18.0103 	EXP 	prPrimeDisp: autoDraw = True
+18.5035 	EXP 	prPrimeDisp: autoDraw = False
+18.5035 	EXP 	prPrimeDisp: autoDraw = False
+18.5035 	EXP 	prTargetDisp: height = 0.05
+18.5035 	EXP 	prTargetDisp: height = 0.05
+18.5035 	EXP 	prTargetDisp: height = 0.05
+18.5035 	EXP 	prTargetDisp: text = '糖雨'
+18.5103 	INFO 	Keyboard events cleared
+18.5102 	EXP 	prTargetDisp: autoDraw = True
+19.5810 	EXP 	New trial (rep=0, index=6): <Trial 6 (6 in rep 0) data={'prime': '房租', 'target': '米宝', 'condition': 'non', 'thisN': 6, 'thisTrialN': 6, 'thisRepN': 0}>
+19.5840 	DATA 	Keypress: j
+19.5876 	EXP 	prTargetDisp: autoDraw = False
+20.0780 	EXP 	prFixationDisp: autoDraw = True
+21.0708 	EXP 	prFixationDisp: autoDraw = False
+21.0708 	EXP 	prFixationDisp: autoDraw = False
+21.0708 	EXP 	prPrimeDisp: height = 0.05
+21.0708 	EXP 	prPrimeDisp: height = 0.05
+21.0708 	EXP 	prPrimeDisp: height = 0.05
+21.0708 	EXP 	prPrimeDisp: text = '房租'
+21.0770 	EXP 	prPrimeDisp: autoDraw = True
+21.5685 	EXP 	prPrimeDisp: autoDraw = False
+21.5685 	EXP 	prPrimeDisp: autoDraw = False
+21.5685 	EXP 	prTargetDisp: height = 0.05
+21.5685 	EXP 	prTargetDisp: height = 0.05
+21.5685 	EXP 	prTargetDisp: height = 0.05
+21.5685 	EXP 	prTargetDisp: text = '米宝'
+21.5781 	INFO 	Keyboard events cleared
+21.5780 	EXP 	prTargetDisp: autoDraw = True
+22.7534 	EXP 	New trial (rep=0, index=7): <Trial 7 (7 in rep 0) data={'prime': '小镇', 'target': '葡萄', 'condition': 'wrd', 'thisN': 7, 'thisTrialN': 7, 'thisRepN': 0}>
+22.7613 	EXP 	prTargetDisp: autoDraw = False
+22.7658 	DATA 	Keypress: f
+23.2511 	EXP 	prFixationDisp: autoDraw = True
+24.2614 	WARNING 	t of last frame was 27.19ms (=1/36)
+24.2614 	EXP 	prFixationDisp: autoDraw = False
+24.2614 	EXP 	prFixationDisp: autoDraw = False
+24.2614 	EXP 	prPrimeDisp: height = 0.05
+24.2614 	EXP 	prPrimeDisp: height = 0.05
+24.2614 	EXP 	prPrimeDisp: height = 0.05
+24.2614 	EXP 	prPrimeDisp: text = '小镇'
+24.2780 	EXP 	prPrimeDisp: autoDraw = True
+24.7725 	INFO 	Keyboard events cleared
+24.7724 	EXP 	prPrimeDisp: autoDraw = False
+24.7724 	EXP 	prTargetDisp: height = 0.05
+24.7724 	EXP 	prTargetDisp: height = 0.05
+24.7724 	EXP 	prTargetDisp: height = 0.05
+24.7724 	EXP 	prTargetDisp: text = '葡萄'
+24.7724 	EXP 	prTargetDisp: autoDraw = True
+25.6645 	EXP 	New trial (rep=0, index=8): <Trial 8 (8 in rep 0) data={'prime': '学业', 'target': '梳子', 'condition': 'non', 'thisN': 8, 'thisTrialN': 8, 'thisRepN': 0}>
+25.6674 	DATA 	Keypress: j
+25.6708 	EXP 	prTargetDisp: autoDraw = False
+26.1612 	EXP 	prFixationDisp: autoDraw = True
+27.1558 	EXP 	prFixationDisp: autoDraw = False
+27.1558 	EXP 	prFixationDisp: autoDraw = False
+27.1558 	EXP 	prPrimeDisp: height = 0.05
+27.1558 	EXP 	prPrimeDisp: height = 0.05
+27.1558 	EXP 	prPrimeDisp: height = 0.05
+27.1558 	EXP 	prPrimeDisp: text = '学业'
+27.1617 	EXP 	prPrimeDisp: autoDraw = True
+27.6548 	EXP 	prPrimeDisp: autoDraw = False
+27.6548 	EXP 	prPrimeDisp: autoDraw = False
+27.6548 	EXP 	prTargetDisp: height = 0.05
+27.6548 	EXP 	prTargetDisp: height = 0.05
+27.6548 	EXP 	prTargetDisp: height = 0.05
+27.6548 	EXP 	prTargetDisp: text = '梳子'
+27.6608 	INFO 	Keyboard events cleared
+27.6607 	EXP 	prTargetDisp: autoDraw = True
+28.6071 	DATA 	Keypress: j
+28.6108 	INFO 	Keyboard events cleared
+28.6108 	EXP 	prTargetDisp: autoDraw = False
+28.6108 	EXP 	readyDisp: autoDraw = True
+29.3424 	DEBUG 	Read excel file with openpyxl: Jianti1.xlsx
+29.3457 	EXP 	Imported Jianti1.xlsx as conditions, 56 conditions, 3 params
+29.3465 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'prime': '蝴蝶', 'target': '蜜蜂', 'condition': 'wrd', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+29.3484 	DATA 	Keypress: space
+29.3514 	WARNING 	t of last frame was 23.49ms (=1/42)
+29.3514 	EXP 	readyDisp: autoDraw = False
+29.8279 	EXP 	fixationDisp: autoDraw = True
+30.8242 	EXP 	fixationDisp: autoDraw = False
+30.8242 	EXP 	fixationDisp: autoDraw = False
+30.8242 	EXP 	primeDisp: height = 0.05
+30.8242 	EXP 	primeDisp: height = 0.05
+30.8242 	EXP 	primeDisp: height = 0.05
+30.8242 	EXP 	primeDisp: text = '蝴蝶'
+30.8308 	EXP 	primeDisp: autoDraw = True
+31.3273 	INFO 	Keyboard events cleared
+31.3272 	EXP 	primeDisp: autoDraw = False
+31.3272 	EXP 	primeDisp: autoDraw = False
+31.3272 	EXP 	targetDisp: height = 0.05
+31.3272 	EXP 	targetDisp: height = 0.05
+31.3272 	EXP 	targetDisp: height = 0.05
+31.3272 	EXP 	targetDisp: text = '蜜蜂'
+31.3272 	EXP 	targetDisp: autoDraw = True
+32.0978 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'prime': '生理', 'target': '性乃', 'condition': 'non', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+32.0991 	DATA 	Keypress: j
+32.1014 	EXP 	targetDisp: autoDraw = False
+32.5938 	EXP 	fixationDisp: autoDraw = True
+33.5885 	EXP 	fixationDisp: autoDraw = False
+33.5885 	EXP 	fixationDisp: autoDraw = False
+33.5885 	EXP 	primeDisp: height = 0.05
+33.5885 	EXP 	primeDisp: height = 0.05
+33.5885 	EXP 	primeDisp: height = 0.05
+33.5885 	EXP 	primeDisp: text = '生理'
+33.5944 	EXP 	primeDisp: autoDraw = True
+34.0859 	EXP 	primeDisp: autoDraw = False
+34.0859 	EXP 	primeDisp: autoDraw = False
+34.0859 	EXP 	targetDisp: height = 0.05
+34.0859 	EXP 	targetDisp: height = 0.05
+34.0859 	EXP 	targetDisp: height = 0.05
+34.0859 	EXP 	targetDisp: text = '性乃'
+34.0937 	INFO 	Keyboard events cleared
+34.0937 	EXP 	targetDisp: autoDraw = True
+34.9362 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'prime': '邮电', 'target': '酬方', 'condition': 'non', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+34.9390 	DATA 	Keypress: f
+34.9434 	EXP 	targetDisp: autoDraw = False
+35.4339 	EXP 	fixationDisp: autoDraw = True
+36.4281 	EXP 	fixationDisp: autoDraw = False
+36.4281 	EXP 	fixationDisp: autoDraw = False
+36.4281 	EXP 	primeDisp: height = 0.05
+36.4281 	EXP 	primeDisp: height = 0.05
+36.4281 	EXP 	primeDisp: height = 0.05
+36.4281 	EXP 	primeDisp: text = '邮电'
+36.4337 	EXP 	primeDisp: autoDraw = True
+36.9272 	EXP 	primeDisp: autoDraw = False
+36.9272 	EXP 	primeDisp: autoDraw = False
+36.9272 	EXP 	targetDisp: height = 0.05
+36.9272 	EXP 	targetDisp: height = 0.05
+36.9272 	EXP 	targetDisp: height = 0.05
+36.9272 	EXP 	targetDisp: text = '酬方'
+36.9325 	INFO 	Keyboard events cleared
+36.9324 	EXP 	targetDisp: autoDraw = True
+37.9472 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'prime': '便宜', 'target': '优惠', 'condition': 'wrd', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+37.9502 	DATA 	Keypress: f
+37.9534 	EXP 	targetDisp: autoDraw = False
+38.4445 	EXP 	fixationDisp: autoDraw = True
+39.4374 	EXP 	fixationDisp: autoDraw = False
+39.4374 	EXP 	fixationDisp: autoDraw = False
+39.4374 	EXP 	primeDisp: height = 0.05
+39.4374 	EXP 	primeDisp: height = 0.05
+39.4374 	EXP 	primeDisp: height = 0.05
+39.4374 	EXP 	primeDisp: text = '便宜'
+39.4434 	EXP 	primeDisp: autoDraw = True
+39.9379 	EXP 	primeDisp: autoDraw = False
+39.9379 	EXP 	primeDisp: autoDraw = False
+39.9379 	EXP 	targetDisp: height = 0.05
+39.9379 	EXP 	targetDisp: height = 0.05
+39.9379 	EXP 	targetDisp: height = 0.05
+39.9379 	EXP 	targetDisp: text = '优惠'
+39.9442 	INFO 	Keyboard events cleared
+39.9441 	EXP 	targetDisp: autoDraw = True
+40.8644 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'prime': '注明', 'target': '家具', 'condition': 'wrd', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+40.8674 	DATA 	Keypress: j
+40.8708 	EXP 	targetDisp: autoDraw = False
+41.3609 	EXP 	fixationDisp: autoDraw = True
+42.3551 	EXP 	fixationDisp: autoDraw = False
+42.3551 	EXP 	fixationDisp: autoDraw = False
+42.3551 	EXP 	primeDisp: height = 0.05
+42.3551 	EXP 	primeDisp: height = 0.05
+42.3551 	EXP 	primeDisp: height = 0.05
+42.3551 	EXP 	primeDisp: text = '注明'
+42.3609 	EXP 	primeDisp: autoDraw = True
+42.8540 	EXP 	primeDisp: autoDraw = False
+42.8540 	EXP 	primeDisp: autoDraw = False
+42.8540 	EXP 	targetDisp: height = 0.05
+42.8540 	EXP 	targetDisp: height = 0.05
+42.8540 	EXP 	targetDisp: height = 0.05
+42.8540 	EXP 	targetDisp: text = '家具'
+42.8606 	INFO 	Keyboard events cleared
+42.8605 	EXP 	targetDisp: autoDraw = True
+43.7699 	EXP 	New trial (rep=0, index=5): <Trial 5 (5 in rep 0) data={'prime': '思维', 'target': '住院', 'condition': 'wrd', 'thisN': 5, 'thisTrialN': 5, 'thisRepN': 0}>
+43.7728 	DATA 	Keypress: j
+43.7766 	EXP 	targetDisp: autoDraw = False
+44.2674 	EXP 	fixationDisp: autoDraw = True
+45.2600 	EXP 	fixationDisp: autoDraw = False
+45.2600 	EXP 	fixationDisp: autoDraw = False
+45.2600 	EXP 	primeDisp: height = 0.05
+45.2600 	EXP 	primeDisp: height = 0.05
+45.2600 	EXP 	primeDisp: height = 0.05
+45.2600 	EXP 	primeDisp: text = '思维'
+45.2661 	EXP 	primeDisp: autoDraw = True
+45.7601 	EXP 	primeDisp: autoDraw = False
+45.7601 	EXP 	primeDisp: autoDraw = False
+45.7601 	EXP 	targetDisp: height = 0.05
+45.7601 	EXP 	targetDisp: height = 0.05
+45.7601 	EXP 	targetDisp: height = 0.05
+45.7601 	EXP 	targetDisp: text = '住院'
+45.7658 	INFO 	Keyboard events cleared
+45.7658 	EXP 	targetDisp: autoDraw = True
+46.7307 	EXP 	New trial (rep=0, index=6): <Trial 6 (6 in rep 0) data={'prime': '出席', 'target': '足败', 'condition': 'non', 'thisN': 6, 'thisTrialN': 6, 'thisRepN': 0}>
+46.7334 	DATA 	Keypress: j
+46.7369 	EXP 	targetDisp: autoDraw = False
+47.2277 	EXP 	fixationDisp: autoDraw = True
+48.2208 	EXP 	fixationDisp: autoDraw = False
+48.2208 	EXP 	fixationDisp: autoDraw = False
+48.2208 	EXP 	primeDisp: height = 0.05
+48.2208 	EXP 	primeDisp: height = 0.05
+48.2208 	EXP 	primeDisp: height = 0.05
+48.2208 	EXP 	primeDisp: text = '出席'
+48.2268 	EXP 	primeDisp: autoDraw = True
+48.7217 	EXP 	primeDisp: autoDraw = False
+48.7217 	EXP 	primeDisp: autoDraw = False
+48.7217 	EXP 	targetDisp: height = 0.05
+48.7217 	EXP 	targetDisp: height = 0.05
+48.7217 	EXP 	targetDisp: height = 0.05
+48.7217 	EXP 	targetDisp: text = '足败'
+48.7275 	INFO 	Keyboard events cleared
+48.7274 	EXP 	targetDisp: autoDraw = True
+49.5473 	EXP 	New trial (rep=0, index=7): <Trial 7 (7 in rep 0) data={'prime': '音乐', 'target': '受甘', 'condition': 'non', 'thisN': 7, 'thisTrialN': 7, 'thisRepN': 0}>
+49.5499 	DATA 	Keypress: f
+49.5532 	EXP 	targetDisp: autoDraw = False
+50.0443 	EXP 	fixationDisp: autoDraw = True
+51.0373 	EXP 	fixationDisp: autoDraw = False
+51.0373 	EXP 	fixationDisp: autoDraw = False
+51.0373 	EXP 	primeDisp: height = 0.05
+51.0373 	EXP 	primeDisp: height = 0.05
+51.0373 	EXP 	primeDisp: height = 0.05
+51.0373 	EXP 	primeDisp: text = '音乐'
+51.0436 	EXP 	primeDisp: autoDraw = True
+51.5379 	EXP 	primeDisp: autoDraw = False
+51.5379 	EXP 	primeDisp: autoDraw = False
+51.5379 	EXP 	targetDisp: height = 0.05
+51.5379 	EXP 	targetDisp: height = 0.05
+51.5379 	EXP 	targetDisp: height = 0.05
+51.5379 	EXP 	targetDisp: text = '受甘'
+51.5438 	INFO 	Keyboard events cleared
+51.5438 	EXP 	targetDisp: autoDraw = True
+52.5138 	EXP 	New trial (rep=0, index=8): <Trial 8 (8 in rep 0) data={'prime': '骑士', 'target': '邮寄', 'condition': 'wrd', 'thisN': 8, 'thisTrialN': 8, 'thisRepN': 0}>
+52.5164 	DATA 	Keypress: j
+52.5198 	EXP 	targetDisp: autoDraw = False
+53.0110 	EXP 	fixationDisp: autoDraw = True
+54.0040 	EXP 	fixationDisp: autoDraw = False
+54.0040 	EXP 	fixationDisp: autoDraw = False
+54.0040 	EXP 	primeDisp: height = 0.05
+54.0040 	EXP 	primeDisp: height = 0.05
+54.0040 	EXP 	primeDisp: height = 0.05
+54.0040 	EXP 	primeDisp: text = '骑士'
+54.0103 	EXP 	primeDisp: autoDraw = True
+54.5045 	EXP 	primeDisp: autoDraw = False
+54.5045 	EXP 	primeDisp: autoDraw = False
+54.5045 	EXP 	targetDisp: height = 0.05
+54.5045 	EXP 	targetDisp: height = 0.05
+54.5045 	EXP 	targetDisp: height = 0.05
+54.5045 	EXP 	targetDisp: text = '邮寄'
+54.5108 	INFO 	Keyboard events cleared
+54.5107 	EXP 	targetDisp: autoDraw = True
+55.2305 	EXP 	New trial (rep=0, index=9): <Trial 9 (9 in rep 0) data={'prime': '憔悴', 'target': '消瘦', 'condition': 'wrd', 'thisN': 9, 'thisTrialN': 9, 'thisRepN': 0}>
+55.2332 	DATA 	Keypress: j
+55.2366 	EXP 	targetDisp: autoDraw = False
+55.7275 	EXP 	fixationDisp: autoDraw = True
+56.7228 	EXP 	fixationDisp: autoDraw = False
+56.7228 	EXP 	fixationDisp: autoDraw = False
+56.7228 	EXP 	primeDisp: height = 0.05
+56.7228 	EXP 	primeDisp: height = 0.05
+56.7228 	EXP 	primeDisp: height = 0.05
+56.7228 	EXP 	primeDisp: text = '憔悴'
+56.7442 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+56.7442 	EXP 	primeDisp: autoDraw = True
+57.2380 	INFO 	Keyboard events cleared
+57.2379 	EXP 	primeDisp: autoDraw = False
+57.2379 	EXP 	primeDisp: autoDraw = False
+57.2379 	EXP 	targetDisp: height = 0.05
+57.2379 	EXP 	targetDisp: height = 0.05
+57.2379 	EXP 	targetDisp: height = 0.05
+57.2379 	EXP 	targetDisp: text = '消瘦'
+57.2379 	EXP 	targetDisp: autoDraw = True
+57.4059 	DATA 	Keypress: escape
+57.5468 	EXP 	Jiantizi1-LDT: status = STOPPED
+57.5505 	EXP 	targetDisp: autoDraw = False
+57.5526 	EXP 	Jiantizi1-LDT: status = STOPPED
+57.5637 	INFO 	saved data to '/Users/ericpelzl/Documents/GitHub/cbs592/Priming/data/917830_Jiantizi1-LDT_2025-09-06_14h46.18.128.csv'
+57.5647 	INFO 	saved data to /Users/ericpelzl/Documents/GitHub/cbs592/Priming/data/917830_Jiantizi1-LDT_2025-09-06_14h46.18.128.psydat
+57.5926 	DEBUG 	Saving data for Jiantizi1-LDT ExperimentHandler
+57.5941 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+57.5942 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+57.5942 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+57.5942 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+57.5943 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+57.5943 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+57.5943 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+57.5943 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+57.5943 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+57.5943 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+57.5945 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+57.5946 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
