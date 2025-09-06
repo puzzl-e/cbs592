@@ -1,0 +1,401 @@
+7.7623 	DEBUG 	Fullscreen settings ignored as running in pilot mode.
+7.7635 	INFO 	Loaded monitor calibration from ['2023_09_17 13:39']
+7.9243 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x15528f010>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x15528f070>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=False, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x15526b100>, multiSample=False, name='window1', numSamples=2, pos=[880.0, 420.0], screen=0, size=array([1600, 1200]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+7.9244 	EXP 	window1: backgroundImage = ''
+7.9244 	EXP 	window1: backgroundFit = 'none'
+7.9360 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.9365 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.9370 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.9376 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.9382 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.9385 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.9390 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.9397 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.9398 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.9400 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.9405 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.9409 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.9413 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.9418 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.9422 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.9427 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.9432 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.9434 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.9437 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.9443 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.9445 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.9447 	DEBUG 	Uploading Texture Font fontname to graphics card
+7.9479 	DEBUG 	Upload of Texture Font fontname complete
+7.9524 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.9531 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.9537 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.9539 	DEBUG 	Uploading Texture Font fontname to graphics card
+7.9559 	DEBUG 	Upload of Texture Font fontname complete
+7.9572 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+7.9572 	EXP 	window1: recordFrameIntervals = False
+8.1595 	EXP 	window1: recordFrameIntervals = True
+8.8747 	WARNING 	t of last frame was 20.17ms (=1/49)
+9.0293 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+9.0384 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0391 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0402 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0418 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0432 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0445 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0450 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0461 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0473 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0484 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0487 	DEBUG 	Uploading Texture Font fontname to graphics card
+9.0524 	DEBUG 	Upload of Texture Font fontname complete
+11.2394 	INFO 	keyboard.Keyboard is using ptb backend.
+11.5413 	INFO 	keyboard.Keyboard is using ptb backend.
+11.8431 	INFO 	keyboard.Keyboard is using ptb backend.
+12.1452 	INFO 	keyboard.Keyboard is using ptb backend.
+12.4468 	INFO 	keyboard.Keyboard is using ptb backend.
+12.7487 	INFO 	keyboard.Keyboard is using ptb backend.
+13.0503 	INFO 	keyboard.Keyboard is using ptb backend.
+13.3519 	INFO 	keyboard.Keyboard is using ptb backend.
+13.6536 	INFO 	keyboard.Keyboard is using ptb backend.
+13.9553 	INFO 	keyboard.Keyboard is using ptb backend.
+14.2569 	INFO 	keyboard.Keyboard is using ptb backend.
+14.5586 	INFO 	keyboard.Keyboard is using ptb backend.
+14.5587 	EXP 	English1-LDT: status = STARTED
+14.5890 	EXP 	Created instructions2Disp = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instructions2Disp', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+14.5933 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+14.5985 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+14.6027 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_3', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+14.6065 	EXP 	Created text_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_4', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+14.6101 	EXP 	Created text_5 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_5', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+14.6131 	EXP 	Created text_6 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_6', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+14.6148 	EXP 	Created text_7 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_7', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Press SPACE BAR to start the practice.', units='height', win=Window(...), wrapWidth=1)
+14.6161 	EXP 	Created prFixationDisp = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='prFixationDisp', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+14.6166 	EXP 	Created prPrimeDisp = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='prPrimeDisp', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+14.6169 	EXP 	Created prTargetDisp = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='prTargetDisp', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+14.6191 	EXP 	Created readyDisp = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='readyDisp', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+14.6200 	EXP 	Created fixationDisp = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='fixationDisp', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+14.6204 	EXP 	Created primeDisp = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='primeDisp', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+14.6208 	EXP 	Created targetDisp = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='targetDisp', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+14.6229 	EXP 	Created completeMessage = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='completeMessage', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='You have finished the experiment!\n', units='height', win=Window(...), wrapWidth=1)
+0.0120 	INFO 	Keyboard events cleared
+0.0119 	EXP 	instructions2Disp: autoDraw = True
+0.7552 	DATA 	Keypress: space
+0.7579 	INFO 	Keyboard events cleared
+0.7578 	WARNING 	t of last frame was 106.22ms (=1/9)
+0.7578 	EXP 	instructions2Disp: autoDraw = False
+0.7578 	EXP 	text: autoDraw = True
+1.1990 	DATA 	Keypress: space
+1.2023 	INFO 	Keyboard events cleared
+1.2022 	EXP 	text: autoDraw = False
+1.2022 	EXP 	text_2: autoDraw = True
+1.5403 	DATA 	Keypress: space
+1.5436 	INFO 	Keyboard events cleared
+1.5435 	EXP 	text_2: autoDraw = False
+1.5435 	EXP 	text_3: autoDraw = True
+1.8910 	DATA 	Keypress: space
+1.8947 	INFO 	Keyboard events cleared
+1.8946 	EXP 	text_3: autoDraw = False
+1.8946 	EXP 	text_4: autoDraw = True
+2.4411 	DATA 	Keypress: space
+2.4446 	INFO 	Keyboard events cleared
+2.4446 	EXP 	text_4: autoDraw = False
+2.4446 	EXP 	text_5: autoDraw = True
+2.8812 	DATA 	Keypress: space
+2.8848 	INFO 	Keyboard events cleared
+2.8848 	EXP 	text_5: autoDraw = False
+2.8848 	EXP 	text_6: autoDraw = True
+3.3299 	DATA 	Keypress: space
+3.3340 	INFO 	Keyboard events cleared
+3.3339 	EXP 	text_6: autoDraw = False
+3.3339 	EXP 	text_7: autoDraw = True
+4.0303 	DEBUG 	Read excel file with openpyxl: EnglishPractice.xlsx
+4.0310 	EXP 	Imported EnglishPractice.xlsx as conditions, 9 conditions, 3 params
+4.0326 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'prime': 'outside', 'target': 'tecopomic ', 'condition': 'non', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+4.0348 	DATA 	Keypress: space
+4.0381 	EXP 	text_7: autoDraw = False
+4.5182 	EXP 	prFixationDisp: autoDraw = True
+5.5099 	EXP 	prFixationDisp: autoDraw = False
+5.5099 	EXP 	prFixationDisp: autoDraw = False
+5.5099 	EXP 	prPrimeDisp: height = 0.05
+5.5099 	EXP 	prPrimeDisp: height = 0.05
+5.5099 	EXP 	prPrimeDisp: height = 0.05
+5.5099 	EXP 	prPrimeDisp: text = 'outside'
+5.5173 	EXP 	prPrimeDisp: autoDraw = True
+6.0100 	EXP 	prPrimeDisp: autoDraw = False
+6.0100 	EXP 	prPrimeDisp: autoDraw = False
+6.0100 	EXP 	prTargetDisp: height = 0.05
+6.0100 	EXP 	prTargetDisp: height = 0.05
+6.0100 	EXP 	prTargetDisp: height = 0.05
+6.0100 	EXP 	prTargetDisp: text = 'tecopomic '
+6.0174 	INFO 	Keyboard events cleared
+6.0173 	EXP 	prTargetDisp: autoDraw = True
+6.6886 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'prime': 'elephant', 'target': 'zaluke ', 'condition': 'non', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+6.6914 	DATA 	Keypress: f
+6.6950 	EXP 	prTargetDisp: autoDraw = False
+7.1849 	EXP 	prFixationDisp: autoDraw = True
+8.1745 	EXP 	prFixationDisp: autoDraw = False
+8.1745 	EXP 	prFixationDisp: autoDraw = False
+8.1745 	EXP 	prPrimeDisp: height = 0.05
+8.1745 	EXP 	prPrimeDisp: height = 0.05
+8.1745 	EXP 	prPrimeDisp: height = 0.05
+8.1745 	EXP 	prPrimeDisp: text = 'elephant'
+8.1848 	EXP 	prPrimeDisp: autoDraw = True
+8.6760 	EXP 	prPrimeDisp: autoDraw = False
+8.6760 	EXP 	prPrimeDisp: autoDraw = False
+8.6760 	EXP 	prTargetDisp: height = 0.05
+8.6760 	EXP 	prTargetDisp: height = 0.05
+8.6760 	EXP 	prTargetDisp: height = 0.05
+8.6760 	EXP 	prTargetDisp: text = 'zaluke '
+8.6847 	INFO 	Keyboard events cleared
+8.6846 	EXP 	prTargetDisp: autoDraw = True
+9.5544 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'prime': 'memorize', 'target': 'vocabulary word ', 'condition': 'wrd', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+9.5571 	DATA 	Keypress: f
+9.5607 	EXP 	prTargetDisp: autoDraw = False
+10.0508 	EXP 	prFixationDisp: autoDraw = True
+10.8486 	WARNING 	t of last frame was 25.65ms (=1/38)
+11.0389 	EXP 	prFixationDisp: autoDraw = False
+11.0389 	EXP 	prFixationDisp: autoDraw = False
+11.0389 	EXP 	prPrimeDisp: height = 0.05
+11.0389 	EXP 	prPrimeDisp: height = 0.05
+11.0389 	EXP 	prPrimeDisp: height = 0.05
+11.0389 	EXP 	prPrimeDisp: text = 'memorize'
+11.0509 	EXP 	prPrimeDisp: autoDraw = True
+11.4914 	WARNING 	t of last frame was 20.35ms (=1/49)
+11.5405 	EXP 	prPrimeDisp: autoDraw = False
+11.5405 	EXP 	prPrimeDisp: autoDraw = False
+11.5405 	EXP 	prTargetDisp: height = 0.05
+11.5405 	EXP 	prTargetDisp: height = 0.05
+11.5405 	EXP 	prTargetDisp: height = 0.05
+11.5405 	EXP 	prTargetDisp: text = 'vocabulary word '
+11.5509 	INFO 	Keyboard events cleared
+11.5508 	EXP 	prTargetDisp: autoDraw = True
+12.1215 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'prime': 'celebration', 'target': 'trammick ', 'condition': 'non', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+12.1244 	DATA 	Keypress: j
+12.1278 	EXP 	prTargetDisp: autoDraw = False
+12.6183 	EXP 	prFixationDisp: autoDraw = True
+13.6097 	EXP 	prFixationDisp: autoDraw = False
+13.6097 	EXP 	prFixationDisp: autoDraw = False
+13.6097 	EXP 	prPrimeDisp: height = 0.05
+13.6097 	EXP 	prPrimeDisp: height = 0.05
+13.6097 	EXP 	prPrimeDisp: height = 0.05
+13.6097 	EXP 	prPrimeDisp: text = 'celebration'
+13.6173 	EXP 	prPrimeDisp: autoDraw = True
+14.1092 	EXP 	prPrimeDisp: autoDraw = False
+14.1092 	EXP 	prPrimeDisp: autoDraw = False
+14.1092 	EXP 	prTargetDisp: height = 0.05
+14.1092 	EXP 	prTargetDisp: height = 0.05
+14.1092 	EXP 	prTargetDisp: height = 0.05
+14.1092 	EXP 	prTargetDisp: text = 'trammick '
+14.1181 	INFO 	Keyboard events cleared
+14.1180 	EXP 	prTargetDisp: autoDraw = True
+14.7542 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'prime': 'town', 'target': 'grape ', 'condition': 'wrd', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+14.7569 	DATA 	Keypress: f
+14.7601 	EXP 	prTargetDisp: autoDraw = False
+15.2515 	EXP 	prFixationDisp: autoDraw = True
+16.2432 	EXP 	prFixationDisp: autoDraw = False
+16.2432 	EXP 	prFixationDisp: autoDraw = False
+16.2432 	EXP 	prPrimeDisp: height = 0.05
+16.2432 	EXP 	prPrimeDisp: height = 0.05
+16.2432 	EXP 	prPrimeDisp: height = 0.05
+16.2432 	EXP 	prPrimeDisp: text = 'town'
+16.2505 	EXP 	prPrimeDisp: autoDraw = True
+16.7429 	EXP 	prPrimeDisp: autoDraw = False
+16.7429 	EXP 	prPrimeDisp: autoDraw = False
+16.7429 	EXP 	prTargetDisp: height = 0.05
+16.7429 	EXP 	prTargetDisp: height = 0.05
+16.7429 	EXP 	prTargetDisp: height = 0.05
+16.7429 	EXP 	prTargetDisp: text = 'grape '
+16.7506 	INFO 	Keyboard events cleared
+16.7506 	EXP 	prTargetDisp: autoDraw = True
+17.3553 	EXP 	New trial (rep=0, index=5): <Trial 5 (5 in rep 0) data={'prime': 'conference', 'target': 'strenger ', 'condition': 'non', 'thisN': 5, 'thisTrialN': 5, 'thisRepN': 0}>
+17.3581 	DATA 	Keypress: j
+17.3616 	EXP 	prTargetDisp: autoDraw = False
+17.8514 	EXP 	prFixationDisp: autoDraw = True
+18.8426 	EXP 	prFixationDisp: autoDraw = False
+18.8426 	EXP 	prFixationDisp: autoDraw = False
+18.8426 	EXP 	prPrimeDisp: height = 0.05
+18.8426 	EXP 	prPrimeDisp: height = 0.05
+18.8426 	EXP 	prPrimeDisp: height = 0.05
+18.8426 	EXP 	prPrimeDisp: text = 'conference'
+18.8514 	EXP 	prPrimeDisp: autoDraw = True
+19.3429 	EXP 	prPrimeDisp: autoDraw = False
+19.3429 	EXP 	prPrimeDisp: autoDraw = False
+19.3429 	EXP 	prTargetDisp: height = 0.05
+19.3429 	EXP 	prTargetDisp: height = 0.05
+19.3429 	EXP 	prTargetDisp: height = 0.05
+19.3429 	EXP 	prTargetDisp: text = 'strenger '
+19.3506 	INFO 	Keyboard events cleared
+19.3505 	EXP 	prTargetDisp: autoDraw = True
+20.2051 	EXP 	New trial (rep=0, index=6): <Trial 6 (6 in rep 0) data={'prime': 'effect', 'target': 'country ', 'condition': 'wrd', 'thisN': 6, 'thisTrialN': 6, 'thisRepN': 0}>
+20.2081 	DATA 	Keypress: f
+20.2114 	EXP 	prTargetDisp: autoDraw = False
+20.7015 	EXP 	prFixationDisp: autoDraw = True
+21.6927 	EXP 	prFixationDisp: autoDraw = False
+21.6927 	EXP 	prFixationDisp: autoDraw = False
+21.6927 	EXP 	prPrimeDisp: height = 0.05
+21.6927 	EXP 	prPrimeDisp: height = 0.05
+21.6927 	EXP 	prPrimeDisp: height = 0.05
+21.6927 	EXP 	prPrimeDisp: text = 'effect'
+21.7006 	EXP 	prPrimeDisp: autoDraw = True
+22.1926 	EXP 	prPrimeDisp: autoDraw = False
+22.1926 	EXP 	prPrimeDisp: autoDraw = False
+22.1926 	EXP 	prTargetDisp: height = 0.05
+22.1926 	EXP 	prTargetDisp: height = 0.05
+22.1926 	EXP 	prTargetDisp: height = 0.05
+22.1926 	EXP 	prTargetDisp: text = 'country '
+22.2009 	INFO 	Keyboard events cleared
+22.2009 	EXP 	prTargetDisp: autoDraw = True
+22.7876 	EXP 	New trial (rep=0, index=7): <Trial 7 (7 in rep 0) data={'prime': 'rent', 'target': 'sunkay ', 'condition': 'non', 'thisN': 7, 'thisTrialN': 7, 'thisRepN': 0}>
+22.7902 	DATA 	Keypress: j
+22.7936 	EXP 	prTargetDisp: autoDraw = False
+23.2847 	EXP 	prFixationDisp: autoDraw = True
+24.2759 	EXP 	prFixationDisp: autoDraw = False
+24.2759 	EXP 	prFixationDisp: autoDraw = False
+24.2759 	EXP 	prPrimeDisp: height = 0.05
+24.2759 	EXP 	prPrimeDisp: height = 0.05
+24.2759 	EXP 	prPrimeDisp: height = 0.05
+24.2759 	EXP 	prPrimeDisp: text = 'rent'
+24.2839 	EXP 	prPrimeDisp: autoDraw = True
+24.7757 	EXP 	prPrimeDisp: autoDraw = False
+24.7757 	EXP 	prPrimeDisp: autoDraw = False
+24.7757 	EXP 	prTargetDisp: height = 0.05
+24.7757 	EXP 	prTargetDisp: height = 0.05
+24.7757 	EXP 	prTargetDisp: height = 0.05
+24.7757 	EXP 	prTargetDisp: text = 'sunkay '
+24.7844 	INFO 	Keyboard events cleared
+24.7843 	EXP 	prTargetDisp: autoDraw = True
+25.4935 	EXP 	New trial (rep=0, index=8): <Trial 8 (8 in rep 0) data={'prime': 'schoolwork', 'target': 'comb ', 'condition': 'wrd', 'thisN': 8, 'thisTrialN': 8, 'thisRepN': 0}>
+25.4964 	DATA 	Keypress: f
+25.5004 	EXP 	prTargetDisp: autoDraw = False
+25.9910 	EXP 	prFixationDisp: autoDraw = True
+26.9846 	EXP 	prFixationDisp: autoDraw = False
+26.9846 	EXP 	prFixationDisp: autoDraw = False
+26.9846 	EXP 	prPrimeDisp: height = 0.05
+26.9846 	EXP 	prPrimeDisp: height = 0.05
+26.9846 	EXP 	prPrimeDisp: height = 0.05
+26.9846 	EXP 	prPrimeDisp: text = 'schoolwork'
+26.9904 	EXP 	prPrimeDisp: autoDraw = True
+27.4841 	EXP 	prPrimeDisp: autoDraw = False
+27.4841 	EXP 	prPrimeDisp: autoDraw = False
+27.4841 	EXP 	prTargetDisp: height = 0.05
+27.4841 	EXP 	prTargetDisp: height = 0.05
+27.4841 	EXP 	prTargetDisp: height = 0.05
+27.4841 	EXP 	prTargetDisp: text = 'comb '
+27.4891 	INFO 	Keyboard events cleared
+27.4890 	EXP 	prTargetDisp: autoDraw = True
+28.1914 	DATA 	Keypress: j
+28.1948 	INFO 	Keyboard events cleared
+28.1947 	EXP 	prTargetDisp: autoDraw = False
+28.1947 	EXP 	readyDisp: autoDraw = True
+28.9698 	DEBUG 	Read excel file with openpyxl: English1.xlsx
+28.9728 	EXP 	Imported English1.xlsx as conditions, 56 conditions, 3 params
+28.9735 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'prime': 'naughty', 'target': 'mischief ', 'condition': 'A', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+28.9756 	DATA 	Keypress: space
+28.9783 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+28.9783 	EXP 	readyDisp: autoDraw = False
+29.4581 	EXP 	fixationDisp: autoDraw = True
+30.4598 	EXP 	fixationDisp: autoDraw = False
+30.4598 	EXP 	fixationDisp: autoDraw = False
+30.4598 	EXP 	primeDisp: height = 0.05
+30.4598 	EXP 	primeDisp: height = 0.05
+30.4598 	EXP 	primeDisp: height = 0.05
+30.4598 	EXP 	primeDisp: text = 'naughty'
+30.4598 	EXP 	primeDisp: autoDraw = True
+30.9607 	INFO 	Keyboard events cleared
+30.9606 	EXP 	primeDisp: autoDraw = False
+30.9606 	EXP 	primeDisp: autoDraw = False
+30.9606 	EXP 	targetDisp: height = 0.05
+30.9606 	EXP 	targetDisp: height = 0.05
+30.9606 	EXP 	targetDisp: height = 0.05
+30.9606 	EXP 	targetDisp: text = 'mischief '
+30.9606 	EXP 	targetDisp: autoDraw = True
+31.9434 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'prime': 'injured', 'target': 'stretcher ', 'condition': 'B', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+31.9460 	DATA 	Keypress: j
+31.9502 	EXP 	targetDisp: autoDraw = False
+32.4403 	EXP 	fixationDisp: autoDraw = True
+33.4346 	EXP 	fixationDisp: autoDraw = False
+33.4346 	EXP 	fixationDisp: autoDraw = False
+33.4346 	EXP 	primeDisp: height = 0.05
+33.4346 	EXP 	primeDisp: height = 0.05
+33.4346 	EXP 	primeDisp: height = 0.05
+33.4346 	EXP 	primeDisp: text = 'injured'
+33.4405 	EXP 	primeDisp: autoDraw = True
+33.9336 	EXP 	primeDisp: autoDraw = False
+33.9336 	EXP 	primeDisp: autoDraw = False
+33.9336 	EXP 	targetDisp: height = 0.05
+33.9336 	EXP 	targetDisp: height = 0.05
+33.9336 	EXP 	targetDisp: height = 0.05
+33.9336 	EXP 	targetDisp: text = 'stretcher '
+33.9397 	INFO 	Keyboard events cleared
+33.9396 	EXP 	targetDisp: autoDraw = True
+34.7875 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'prime': 'fight', 'target': 'cressfass ', 'condition': 'n', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+34.7905 	DATA 	Keypress: j
+34.7939 	EXP 	targetDisp: autoDraw = False
+35.2846 	EXP 	fixationDisp: autoDraw = True
+36.2760 	EXP 	fixationDisp: autoDraw = False
+36.2760 	EXP 	fixationDisp: autoDraw = False
+36.2760 	EXP 	primeDisp: height = 0.05
+36.2760 	EXP 	primeDisp: height = 0.05
+36.2760 	EXP 	primeDisp: height = 0.05
+36.2760 	EXP 	primeDisp: text = 'fight'
+36.2836 	EXP 	primeDisp: autoDraw = True
+36.7762 	EXP 	primeDisp: autoDraw = False
+36.7762 	EXP 	primeDisp: autoDraw = False
+36.7762 	EXP 	targetDisp: height = 0.05
+36.7762 	EXP 	targetDisp: height = 0.05
+36.7762 	EXP 	targetDisp: height = 0.05
+36.7762 	EXP 	targetDisp: text = 'cressfass '
+36.7837 	INFO 	Keyboard events cleared
+36.7836 	EXP 	targetDisp: autoDraw = True
+37.3770 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'prime': 'affair', 'target': 'clean ', 'condition': 'B', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+37.3796 	DATA 	Keypress: f
+37.3836 	EXP 	targetDisp: autoDraw = False
+37.8742 	EXP 	fixationDisp: autoDraw = True
+38.8679 	EXP 	fixationDisp: autoDraw = False
+38.8679 	EXP 	fixationDisp: autoDraw = False
+38.8679 	EXP 	primeDisp: height = 0.05
+38.8679 	EXP 	primeDisp: height = 0.05
+38.8679 	EXP 	primeDisp: height = 0.05
+38.8679 	EXP 	primeDisp: text = 'affair'
+38.8738 	EXP 	primeDisp: autoDraw = True
+39.3678 	EXP 	primeDisp: autoDraw = False
+39.3678 	EXP 	primeDisp: autoDraw = False
+39.3678 	EXP 	targetDisp: height = 0.05
+39.3678 	EXP 	targetDisp: height = 0.05
+39.3678 	EXP 	targetDisp: height = 0.05
+39.3678 	EXP 	targetDisp: text = 'clean '
+39.3730 	INFO 	Keyboard events cleared
+39.3729 	EXP 	targetDisp: autoDraw = True
+39.9106 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'prime': 'physiology', 'target': 'scriping ', 'condition': 'n', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+39.9134 	DATA 	Keypress: j
+39.9171 	EXP 	targetDisp: autoDraw = False
+40.4069 	EXP 	fixationDisp: autoDraw = True
+41.4001 	EXP 	fixationDisp: autoDraw = False
+41.4001 	EXP 	fixationDisp: autoDraw = False
+41.4001 	EXP 	primeDisp: height = 0.05
+41.4001 	EXP 	primeDisp: height = 0.05
+41.4001 	EXP 	primeDisp: height = 0.05
+41.4001 	EXP 	primeDisp: text = 'physiology'
+41.4065 	EXP 	primeDisp: autoDraw = True
+41.4904 	DATA 	Keypress: escape
+41.5884 	EXP 	English1-LDT: status = STOPPED
+41.6006 	EXP 	primeDisp: autoDraw = False
+41.6044 	EXP 	English1-LDT: status = STOPPED
+41.6095 	INFO 	saved data to '/Users/ericpelzl/Documents/GitHub/cbs592/Priming/psychopy/English1/data/568121_English1-LDT_2025-09-06_15h13.13.334.csv'
+41.6101 	INFO 	saved data to /Users/ericpelzl/Documents/GitHub/cbs592/Priming/psychopy/English1/data/568121_English1-LDT_2025-09-06_15h13.13.334.psydat
+41.6292 	DEBUG 	Saving data for English1-LDT ExperimentHandler
+41.6306 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+41.6306 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+41.6306 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+41.6306 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+41.6307 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+41.6307 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+41.6307 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+41.6307 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+41.6307 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+41.6307 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+41.6307 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+41.6310 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
