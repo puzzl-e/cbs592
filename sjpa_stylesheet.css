@@ -12,14 +12,12 @@ p {
 a {text-decoration:none}
 h1 {text-align:center; ;
 	font-family: 'DM Sans', sans-serif;
-  font-weight: 400; /* For regular paragraph text */}
+}
 h2 {text-align:center;
 	font-family: 'DM Sans', sans-serif;
-  font-weight: 400; /* For regular paragraph text */
 }
 h3 {text-align:center;
 	font-family: 'DM Sans', sans-serif;
-  font-weight: 400; /* For regular paragraph text */
 }
 h3.centercol
 {
@@ -48,7 +46,6 @@ h4.centercol
 	margin-right:auto;
 	text-align:left;
 	font-family: 'DM Sans', sans-serif;
-  font-weight: 400; /* For regular paragraph text */
 }
 h4.centercolindent
 {
@@ -58,7 +55,6 @@ h4.centercolindent
 	text-align:left;
 	padding-left:3em;
 	font-family: 'DM Sans', sans-serif;
-  font-weight: 400; /* For regular paragraph text */
 }
 h5.centercolindent
 {
@@ -68,7 +64,6 @@ h5.centercolindent
 	text-align:left;
 	padding-left:3em;
 	font-family: 'DM Sans', sans-serif;
-  font-weight: 400; /* For regular paragraph text */
 }
 p.center
 {
