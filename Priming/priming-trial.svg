@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.54 255.12">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 2px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-5, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-4 {
+        stroke: #231f20;
+      }
+
+      .cls-6 {
+        fill: #d71920;
+      }
+
+      .cls-6, .cls-7 {
+        font-family: Avenir-Black, Avenir;
+        font-size: 14px;
+        font-weight: 800;
+      }
+
+      .cls-8 {
+        fill: #231f20;
+        font-family: Avenir-Roman, Avenir;
+        font-size: 24px;
+      }
+
+      .cls-2 {
+        stroke-dasharray: 4.88 1.95;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke: #939598;
+      }
+
+      .cls-9 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7, .cls-10 {
+        fill: #939598;
+      }
+
+      .cls-11 {
+        letter-spacing: -.09em;
+      }
+
+      .cls-4 {
+        stroke-width: .75px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-5" y="0" width="453.54" height="255.12"/>
+  <g>
+    <g>
+      <rect class="cls-4" x="8.5" y="37.28" width="113.39" height="56.69"/>
+      <text class="cls-8" transform="translate(57.21 71.1)"><tspan x="0" y="0">+</tspan></text>
+    </g>
+    <g>
+      <rect class="cls-1" x="116.22" y="88.31" width="113.39" height="56.69"/>
+      <text class="cls-8" transform="translate(127.11 124.13)"><tspan x="0" y="0">bu</tspan><tspan class="cls-9" x="28.01" y="0">t</tspan><tspan x="36.48" y="0">terfly</tspan></text>
+    </g>
+    <g>
+      <path class="cls-3" d="M65.2,13.33c.81-.23,1.61-.45,2.41-.66"/>
+      <path class="cls-2" d="M69.5,12.18c64.62-16.36,89.22,20.11,95.62,39.86"/>
+      <path class="cls-3" d="M165.4,52.97c.25.84.47,1.64.66,2.41"/>
+      <path class="cls-10" d="M166.94,61.34c-1.48-2.64-3.79-5.85-6.01-7.72l4.96.97,4.43-2.43c-1.55,2.45-2.78,6.21-3.39,9.18Z"/>
+    </g>
+    <g>
+      <rect class="cls-1" x="223.94" y="139.33" width="113.39" height="56.69"/>
+      <text class="cls-8" transform="translate(259.95 175.15)"><tspan x="0" y="0">bee</tspan></text>
+    </g>
+    <g>
+      <rect class="cls-4" x="331.65" y="190.35" width="113.39" height="56.69"/>
+      <text class="cls-8" transform="translate(346.75 226.17)"><tspan x="0" y="0">yes/no?</tspan></text>
+    </g>
+    <g>
+      <path class="cls-3" d="M172.91,63.77c.81-.23,1.61-.45,2.41-.66"/>
+      <path class="cls-2" d="M177.21,62.62c64.62-16.36,89.22,20.11,95.62,39.86"/>
+      <path class="cls-3" d="M273.12,103.4c.25.84.47,1.64.66,2.41"/>
+      <path class="cls-10" d="M274.65,111.78c-1.48-2.64-3.79-5.85-6.01-7.72l4.96.97,4.43-2.43c-1.55,2.45-2.78,6.21-3.39,9.18Z"/>
+    </g>
+    <g>
+      <path class="cls-3" d="M280.63,114.21c.81-.23,1.61-.45,2.41-.66"/>
+      <path class="cls-2" d="M284.93,113.06c64.62-16.36,89.22,20.11,95.62,39.86"/>
+      <path class="cls-3" d="M380.84,153.84c.25.84.47,1.64.66,2.41"/>
+      <path class="cls-10" d="M382.37,162.22c-1.48-2.64-3.79-5.85-6.01-7.72l4.96.97,4.43-2.43c-1.55,2.45-2.78,6.21-3.39,9.18Z"/>
+    </g>
+    <text class="cls-7" transform="translate(31.76 27.33)"><tspan x="0" y="0">FIX</tspan><tspan class="cls-11" x="22.55" y="0">A</tspan><tspan x="31.64" y="0">TION</tspan></text>
+    <text class="cls-6" transform="translate(150.88 77.77)"><tspan x="0" y="0">PRIME</tspan></text>
+    <text class="cls-6" transform="translate(253.66 128.21)"><tspan class="cls-11" x="0" y="0">T</tspan><tspan x="6.75" y="0">ARGET</tspan></text>
+    <text class="cls-7" transform="translate(351.02 178.62)"><tspan x="0" y="0">RESPONSE</tspan></text>
+  </g>
+</svg>
