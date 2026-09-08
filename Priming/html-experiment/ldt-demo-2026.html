@@ -1467,23 +1467,15 @@
     });
     html += '</table></div>';
 
-    html += '<div class="results-actions">';
+    html += '<div style="text-align:center; margin-top:24px;">';
+    html += '<p style="font-size:0.9rem; color:var(--text-secondary); margin-bottom:12px;">If you would like to save your data, click the button below.</p>';
     html += '<button class="btn btn-download" id="download-btn">\u2193 Download CSV</button>';
-    html += '<button class="btn btn-restart" id="restart-btn">Run Again</button>';
-    html += '</div>';
-
-    html += '<div style="text-align:center; margin-top:28px; padding:20px 24px; background:var(--bg-card); border:1px solid var(--border); border-radius:14px;">';
-    html += '<p style="font-size:0.95rem; color:var(--text-secondary); margin-bottom:10px;">Click the link below to enter your results in the class Google form.</p>';
-    html += '<a href="https://forms.gle/cB8hCX9LRMEGKKQ27" target="_blank" rel="noopener noreferrer" style="color:var(--accent); font-family:JetBrains Mono,monospace; font-size:0.85rem; text-decoration:underline; text-underline-offset:3px;">Open Google Form \u2197</a>';
     html += '</div>';
 
     resultsScroll.innerHTML = html;
     showScreen(resultsScreen);
 
     document.getElementById("download-btn").addEventListener("click", downloadCSV);
-    document.getElementById("restart-btn").addEventListener("click", function() {
-      showScreen(prescreen1);
-    });
   }
 
   function buildStatCard(label, value, unit, cls) {
@@ -1499,7 +1491,7 @@
   // ═══════════════════════════════════════════════════
 
   function downloadCSV() {
-    var header = "trial,item,prime,target,condition,response,correct,rt_ms,list";
+    var header = "Trial,Item,Prime,Target,Condition,Response,Result,RT,List";
     var rows = [header];
     results.forEach(function(r) {
       rows.push([
