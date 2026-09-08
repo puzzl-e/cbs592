@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Lexical Decision Experiment</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-primary: #0a0e17;
+    --bg-secondary: #111827;
+    --bg-card: #1a2236;
+    --bg-card-hover: #1f2a42;
+    --text-primary: #e8ecf4;
+    --text-secondary: #8892a8;
+    --text-muted: #4d5770;
+    --accent: #60a5fa;
+    --accent-glow: rgba(96, 165, 250, 0.15);
+    --correct: #34d399;
+    --correct-glow: rgba(52, 211, 153, 0.15);
+    --incorrect: #f87171;
+    --incorrect-glow: rgba(248, 113, 113, 0.15);
+    --border: rgba(255, 255, 255, 0.06);
+    --condition-a: #a78bfa;
+    --condition-b: #fbbf24;
+    --condition-nw: #f472b6;
+  }
+
+  html.dark {
+    --bg-primary: #0a0e17;
+    --bg-secondary: #111827;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 0%, rgba(96, 165, 250, 0.06) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 50% at 80% 100%, rgba(167, 139, 250, 0.04) 0%, transparent 50%),
+      radial-gradient(ellipse 50% 40% at 10% 80%, rgba(244, 114, 182, 0.03) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  #app {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 700px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+
+  /* ── Screens ── */
+  .screen { display: none; width: 100%; }
+  .screen.active { display: flex; flex-direction: column; align-items: center; }
+
+  .title {
+    font-family: 'Crimson Pro', serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+    text-align: center;
+    background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* ── Pre-instruction screens ── */
+  .prescreen {
+    text-align: center;
+    max-width: 520px;
+  }
+
+  .prescreen-icon {
+    font-size: 3rem;
+    margin-bottom: 24px;
+    display: block;
+    opacity: 0;
+    animation: softPop 0.5s ease 0.15s forwards;
+  }
+
+  .prescreen-text {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.55rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: 40px;
+    opacity: 0;
+    animation: softPop 0.5s ease 0.35s forwards;
+  }
+
+  .prescreen .btn {
+    opacity: 0;
+    animation: softPop 0.4s ease 0.6s forwards;
+  }
+
+  @keyframes softPop {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .btn-secondary {
+    background: var(--bg-card);
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+  }
+
+  .btn-secondary:hover {
+    background: var(--bg-card-hover);
+    border-color: rgba(255,255,255,0.12);
+  }
+
+  /* ── Timeout overlay ── */
+  .timeout-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(251, 191, 36, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 12;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .timeout-overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .timeout-icon {
+    font-size: 2.6rem;
+    margin-bottom: 14px;
+  }
+
+  .timeout-msg {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--condition-b);
+    text-align: center;
+    max-width: 340px;
+    line-height: 1.5;
+    margin-bottom: 6px;
+  }
+
+  .timeout-sub {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+  }
+
+  .instructions {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 32px;
+    width: 100%;
+    margin-bottom: 32px;
+    line-height: 1.7;
+  }
+
+  .instructions h3 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    margin-bottom: 16px;
+  }
+
+  .instructions p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+  }
+
+  .instructions p:last-child { margin-bottom: 0; }
+
+  .key-badge {
+    display: inline-block;
+    background: var(--bg-primary);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 2px 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent);
+    vertical-align: middle;
+  }
+
+  .btn {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px 40px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .btn-primary {
+    background: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
+    color: #fff;
+    box-shadow: 0 4px 24px rgba(99, 102, 241, 0.3);
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 32px rgba(99, 102, 241, 0.4);
+  }
+
+  .btn-primary:active { transform: translateY(0); }
+
+  /* ── Trial Screen ── */
+  .trial-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 60vh;
+    position: relative;
+  }
+
+  .trial-counter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    letter-spacing: 0.06em;
+  }
+
+  .progress-bar-container {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--bg-card);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), #818cf8);
+    border-radius: 2px;
+    transition: width 0.4s ease;
+    width: 0%;
+  }
+
+  .fixation {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 3.5rem;
+    color: var(--text-muted);
+    user-select: none;
+  }
+
+  .stimulus-word {
+    font-family: 'Crimson Pro', serif;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    user-select: none;
+    text-align: center;
+  }
+
+  .stimulus-prime { color: var(--text-secondary); }
+
+  .stimulus-target {
+    color: var(--text-primary);
+    text-shadow: 0 0 40px var(--accent-glow);
+  }
+
+  .prompt-keys {
+    display: flex;
+    gap: 48px;
+    margin-top: 48px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .prompt-keys.visible { opacity: 1; }
+
+  .prompt-key {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .prompt-key kbd {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.4rem;
+    font-weight: 700;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    color: var(--accent);
+    transition: all 0.15s ease;
+  }
+
+  .prompt-key span {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-family: 'JetBrains Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  /* ── Feedback ── */
+  .feedback-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+  }
+
+  .feedback-overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .feedback-overlay.correct { background: var(--correct-glow); }
+  .feedback-overlay.incorrect { background: var(--incorrect-glow); }
+
+  .feedback-icon { font-size: 3rem; margin-bottom: 12px; }
+
+  .feedback-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .feedback-label.correct-text { color: var(--correct); }
+  .feedback-label.incorrect-text { color: var(--incorrect); }
+
+  .feedback-rt {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: 8px;
+  }
+
+  .feedback-hint {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-top: 12px;
+    text-align: center;
+    max-width: 320px;
+    line-height: 1.5;
+  }
+
+  /* ── Results ── */
+  .results-container {
+    width: 100%;
+    animation: fadeUp 0.6s ease both;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .results-header {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .results-header h1 {
+    font-family: 'Crimson Pro', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .results-header p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  .stat-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 16px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+  }
+
+  .stat-card.cond-a::before { background: var(--condition-a); }
+  .stat-card.cond-b::before { background: var(--condition-b); }
+  .stat-card.cond-nw::before { background: var(--condition-nw); }
+
+  .stat-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+  }
+
+  .stat-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 2px;
+  }
+
+  .stat-unit {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+  }
+
+  .stat-card.cond-a .stat-value { color: var(--condition-a); }
+  .stat-card.cond-b .stat-value { color: var(--condition-b); }
+  .stat-card.cond-nw .stat-value { color: var(--condition-nw); }
+
+  .section-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    margin-top: 8px;
+  }
+
+  .detail-table {
+    width: 100%;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 28px;
+  }
+
+  .detail-table table { width: 100%; border-collapse: collapse; }
+
+  .detail-table th {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .detail-table td {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.82rem;
+    padding: 11px 16px;
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .detail-table tr:last-child td { border-bottom: none; }
+
+  .detail-table .cond-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+
+  .cond-badge-a { background: rgba(167,139,250,0.15); color: var(--condition-a); }
+  .cond-badge-b { background: rgba(251,191,36,0.15); color: var(--condition-b); }
+  .cond-badge-nw { background: rgba(244,114,182,0.15); color: var(--condition-nw); }
+
+  .correct-cell { color: var(--correct); }
+  .incorrect-cell { color: var(--incorrect); }
+
+  .results-scroll {
+    max-height: 100vh;
+    overflow-y: auto;
+    padding-bottom: 40px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .btn-restart {
+    background: var(--bg-card);
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+  }
+
+  .btn-restart:hover { background: var(--bg-card-hover); }
+
+  .btn-download {
+    background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+    color: #fff;
+    box-shadow: 0 4px 20px rgba(16, 185, 129, 0.25);
+  }
+
+  .btn-download:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 28px rgba(16, 185, 129, 0.35);
+  }
+
+  .btn-download:active { transform: translateY(0); }
+
+  .results-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 16px;
+  }
+
+  /* ── Touch-friendly buttons for mobile ── */
+  .touch-buttons {
+    display: none;
+    gap: 16px;
+    margin-top: 32px;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .touch-btn {
+    flex: 1;
+    padding: 18px 12px;
+    border-radius: 14px;
+    border: 2px solid var(--border);
+    background: var(--bg-card);
+    color: var(--text-primary);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .touch-btn:active { transform: scale(0.96); }
+  .touch-btn-word { border-color: rgba(96, 165, 250, 0.3); }
+  .touch-btn-nonword { border-color: rgba(244, 114, 182, 0.3); }
+
+  /* ── Practice badge ── */
+  .phase-badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 4px 12px;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .phase-badge-practice {
+    background: rgba(251, 191, 36, 0.15);
+    color: var(--condition-b);
+  }
+
+  .phase-badge-experiment {
+    background: rgba(96, 165, 250, 0.1);
+    color: var(--accent);
+  }
+
+  @media (pointer: coarse) {
+    .touch-buttons { display: flex; }
+  }
+
+  @media (max-width: 520px) {
+    .title { font-size: 1.8rem; }
+    .instructions { padding: 20px; }
+    .stimulus-word { font-size: 2.2rem; }
+    .fixation { font-size: 2.8rem; }
+    .stats-grid { grid-template-columns: 1fr; }
+    .stat-card { padding: 16px; }
+    .prompt-keys { gap: 28px; }
+    #app { padding: 16px; }
+    .touch-buttons { display: flex; }
+  }
+</style>
+</head>
+<body>
+<div id="app">
+
+  <!-- Pre-instruction Screen 1 -->
+  <div id="prescreen-1" class="screen active">
+    <div class="prescreen">
+      <span class="prescreen-icon">🔇</span>
+      <p class="prescreen-text">Please find a quiet place without distractions to complete this experiment.</p>
+      <button class="btn btn-secondary" id="pre1-continue">Continue</button>
+    </div>
+  </div>
+
+  <!-- Pre-instruction Screen 2 -->
+  <div id="prescreen-2" class="screen">
+    <div class="prescreen">
+      <span class="prescreen-icon">⚡</span>
+      <p class="prescreen-text">Please respond as quickly and accurately as you can.</p>
+      <button class="btn btn-secondary" id="pre2-continue">Continue</button>
+    </div>
+  </div>
+
+  <!-- Welcome / Instructions Screen -->
+  <div id="welcome-screen" class="screen">
+    <h1 class="title">Lexical Decision Task</h1>
+    <div class="instructions" style="margin-top: 28px;">
+      <h3>How it works</h3>
+      <p>On each trial you will see:</p>
+      <p style="padding-left:12px; border-left:2px solid var(--border); margin: 8px 0 16px;">
+        <strong>Fixation cross</strong> → <strong>Prime word</strong> → <strong>Target string</strong>
+      </p>
+      <p>Your task is to decide as quickly and accurately as possible whether the <strong>target</strong> is a <em>real English word</em> or a <em>nonword</em>.</p>
+      <p style="margin-top:16px;">
+        Press <span class="key-badge">F</span> for <strong>Real Word</strong> &nbsp;·&nbsp;
+        Press <span class="key-badge">J</span> for <strong>Nonword</strong>
+      </p>
+      <p style="margin-top:8px; font-size:0.82rem; color: var(--text-muted);">On touchscreens, tap the on-screen buttons instead.</p>
+      <p style="margin-top:16px;">You will start with <strong>12 practice trials</strong> to get familiar with the task, followed by <strong>68 experimental trials</strong>. You have <strong>5 seconds</strong> to respond on each trial.</p>
+    </div>
+    <button class="btn btn-primary" id="start-btn">Begin Practice</button>
+  </div>
+
+  <!-- Transition screen: practice → experiment -->
+  <div id="transition-screen" class="screen">
+    <div class="prescreen">
+      <span class="prescreen-icon">✓</span>
+      <p class="prescreen-text">Practice complete! You are now ready for the experiment. Remember:</p>
+      <div class="instructions" style="margin-bottom: 32px; text-align: left;">
+        <p>Press <span class="key-badge">F</span> if the target is a <strong>real word</strong></p>
+        <p>Press <span class="key-badge">J</span> if the target is a <strong>nonword</strong></p>
+        <p style="margin-top: 8px; font-size:0.82rem; color: var(--text-muted);">On touchscreens, tap the on-screen buttons.</p>
+      </div>
+      <button class="btn btn-primary" id="begin-experiment-btn">Begin Experiment</button>
+    </div>
+  </div>
+
+  <!-- Trial Screen -->
+  <div id="trial-screen" class="screen">
+    <div class="trial-area" id="trial-area">
+      <span class="trial-counter" id="trial-counter"></span>
+      <span class="phase-badge" id="phase-badge"></span>
+      <div class="progress-bar-container">
+        <div class="progress-bar-fill" id="progress-fill"></div>
+      </div>
+      <div id="stimulus-display"></div>
+      <div class="prompt-keys" id="prompt-keys">
+        <div class="prompt-key">
+          <kbd>F</kbd>
+          <span>Word</span>
+        </div>
+        <div class="prompt-key">
+          <kbd>J</kbd>
+          <span>Nonword</span>
+        </div>
+      </div>
+      <div class="touch-buttons" id="touch-buttons">
+        <button class="touch-btn touch-btn-word" id="btn-word">Real Word</button>
+        <button class="touch-btn touch-btn-nonword" id="btn-nonword">Nonword</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Results Screen -->
+  <div id="results-screen" class="screen">
+    <div class="results-container">
+      <div class="results-scroll" id="results-scroll"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Feedback Overlay -->
+<div class="feedback-overlay" id="feedback-overlay">
+  <div class="feedback-icon" id="feedback-icon"></div>
+  <div class="feedback-label" id="feedback-label"></div>
+  <div class="feedback-rt" id="feedback-rt"></div>
+  <div class="feedback-hint" id="feedback-hint"></div>
+</div>
+
+<!-- Timeout Overlay -->
+<div class="timeout-overlay" id="timeout-overlay">
+  <div class="timeout-icon">⏱</div>
+  <div class="timeout-msg">Please try to respond more quickly!</div>
+  <div class="timeout-sub">You have 5 seconds per trial</div>
+</div>
+
+<script>
+(function() {
+  "use strict";
+
+  // ── Dark mode detection ──
+  if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    document.documentElement.classList.add("dark");
+  }
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function(event) {
+    if (event.matches) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  });
+
+  // ═══════════════════════════════════════════════════
+  // STIMULUS DATA (from ldt-English-2026version.csv)
+  // ═══════════════════════════════════════════════════
+
+  // Items 1–40: each has a related prime and an unrelated prime sharing the same target.
+  // The latin square assigns half to condition A (related) and half to B (unrelated).
+  var CRITICAL_ITEMS = [
+    {item:1, relPrime:"dog",    unrelPrime:"lamp",    target:"cat"},
+    {item:2, relPrime:"bread",  unrelPrime:"river",   target:"butter"},
+    {item:3, relPrime:"salt",   unrelPrime:"cloud",   target:"pepper"},
+    {item:4, relPrime:"king",   unrelPrime:"music",   target:"queen"},
+    {item:5, relPrime:"doctor", unrelPrime:"paper",   target:"nurse"},
+    {item:6, relPrime:"sun",    unrelPrime:"pencil",  target:"moon"},
+    {item:7, relPrime:"day",    unrelPrime:"saddle",  target:"night"},
+    {item:8, relPrime:"hot",    unrelPrime:"button",  target:"cold"},
+    {item:9, relPrime:"sky",    unrelPrime:"hammer",  target:"blue"},
+    {item:10,relPrime:"car",    unrelPrime:"jacket",  target:"road"},
+    {item:11,relPrime:"book",   unrelPrime:"candle",  target:"page"},
+    {item:12,relPrime:"milk",   unrelPrime:"rocket",  target:"cow"},
+    {item:13,relPrime:"fire",   unrelPrime:"violin",  target:"smoke"},
+    {item:14,relPrime:"tea",    unrelPrime:"jungle",  target:"coffee"},
+    {item:15,relPrime:"boy",    unrelPrime:"tunnel",  target:"girl"},
+    {item:16,relPrime:"apple",  unrelPrime:"tractor", target:"fruit"},
+    {item:17,relPrime:"table",  unrelPrime:"basket",  target:"chair"},
+    {item:18,relPrime:"fish",   unrelPrime:"ribbon",  target:"water"},
+    {item:19,relPrime:"shoe",   unrelPrime:"onion",   target:"foot"},
+    {item:20,relPrime:"bird",   unrelPrime:"kettle",  target:"wing"},
+    {item:21,relPrime:"white",  unrelPrime:"spoon",   target:"black"},
+    {item:22,relPrime:"mother", unrelPrime:"carpet",  target:"father"},
+    {item:23,relPrime:"brother",unrelPrime:"rabbit",  target:"sister"},
+    {item:24,relPrime:"winter", unrelPrime:"eagle",   target:"summer"},
+    {item:25,relPrime:"left",   unrelPrime:"mirror",  target:"right"},
+    {item:26,relPrime:"happy",  unrelPrime:"garden",  target:"sad"},
+    {item:27,relPrime:"big",    unrelPrime:"silver",  target:"small"},
+    {item:28,relPrime:"young",  unrelPrime:"orange",  target:"old"},
+    {item:29,relPrime:"fast",   unrelPrime:"castle",  target:"slow"},
+    {item:30,relPrime:"north",  unrelPrime:"bottle",  target:"south"},
+    {item:31,relPrime:"soft",   unrelPrime:"letter",  target:"hard"},
+    {item:32,relPrime:"open",   unrelPrime:"honey",   target:"close"},
+    {item:33,relPrime:"begin",  unrelPrime:"pillow",  target:"end"},
+    {item:34,relPrime:"love",   unrelPrime:"sugar",   target:"hate"},
+    {item:35,relPrime:"give",   unrelPrime:"window",  target:"take"},
+    {item:36,relPrime:"wet",    unrelPrime:"planet",  target:"dry"},
+    {item:37,relPrime:"light",  unrelPrime:"marble",  target:"dark"},
+    {item:38,relPrime:"high",   unrelPrime:"velvet",  target:"low"},
+    {item:39,relPrime:"thick",  unrelPrime:"cabin",   target:"thin"},
+    {item:40,relPrime:"bed",    unrelPrime:"statue",  target:"sleep"}
+  ];
+
+  // Items 41–80: filler trials with nonword targets
+  var FILLER_ITEMS = [
+    {item:41,prime:"house",target:"blon"},
+    {item:42,prime:"tree",target:"trink"},
+    {item:43,prime:"ball",target:"flem"},
+    {item:44,prime:"mouse",target:"drask"},
+    {item:45,prime:"clock",target:"plome"},
+    {item:46,prime:"plate",target:"krent"},
+    {item:47,prime:"ship",target:"blive"},
+    {item:48,prime:"plant",target:"snerf"},
+    {item:49,prime:"rain",target:"trame"},
+    {item:50,prime:"snow",target:"glish"},
+    {item:51,prime:"wind",target:"frop"},
+    {item:52,prime:"star",target:"blaft"},
+    {item:53,prime:"ocean",target:"crint"},
+    {item:54,prime:"soap",target:"slome"},
+    {item:55,prime:"brush",target:"prand"},
+    {item:56,prime:"floor",target:"nerb"},
+    {item:57,prime:"door",target:"tronk"},
+    {item:58,prime:"shirt",target:"blesk"},
+    {item:59,prime:"boots",target:"flund"},
+    {item:60,prime:"ring",target:"grask"},
+    {item:61,prime:"cup",target:"melsh"},
+    {item:62,prime:"fork",target:"brin"},
+    {item:63,prime:"knife",target:"clof"},
+    {item:64,prime:"bridge",target:"sprot"},
+    {item:65,prime:"train",target:"tept"},
+    {item:66,prime:"plane",target:"dring"},
+    {item:67,prime:"truck",target:"molk"},
+    {item:68,prime:"bike",target:"famt"},
+    {item:69,prime:"money",target:"blong"},
+    {item:70,prime:"coin",target:"crame"},
+    {item:71,prime:"card",target:"plib"},
+    {item:72,prime:"game",target:"snib"},
+    {item:73,prime:"movie",target:"drisp"},
+    {item:74,prime:"dance",target:"flent"},
+    {item:75,prime:"song",target:"grond"},
+    {item:76,prime:"radio",target:"brask"},
+    {item:77,prime:"phone",target:"clent"},
+    {item:78,prime:"cake",target:"preb"},
+    {item:79,prime:"juice",target:"trund"},
+    {item:80,prime:"glass",target:"smerk"}
+  ];
+
+  // Practice items drawn from the experimental pool.
+  // 3 related (A) from first-half critical items (1–3),
+  // 3 unrelated (B) from second-half critical items (21–23),
+  // 6 nonword from fillers (41–46).
+  // These item numbers are excluded from the main experiment, leaving 68 trials.
+  var PRACTICE_CRITICAL_IDS = [1, 2, 3, 21, 22, 23];
+  var PRACTICE_FILLER_IDS   = [41, 42, 43, 44, 45, 46];
+
+  function buildPracticeTrials() {
+    var trials = [];
+    // 3 related (A): items 1–3 always shown with their related prime
+    [1, 2, 3].forEach(function(id) {
+      var ci = CRITICAL_ITEMS.filter(function(c) { return c.item === id; })[0];
+      trials.push({ prime: ci.relPrime, target: ci.target, condition: "A", isWord: true });
+    });
+    // 3 unrelated (B): items 21–23 always shown with their unrelated prime
+    [21, 22, 23].forEach(function(id) {
+      var ci = CRITICAL_ITEMS.filter(function(c) { return c.item === id; })[0];
+      trials.push({ prime: ci.unrelPrime, target: ci.target, condition: "B", isWord: true });
+    });
+    // 6 nonword: filler items 41–46
+    PRACTICE_FILLER_IDS.forEach(function(id) {
+      var fi = FILLER_ITEMS.filter(function(f) { return f.item === id; })[0];
+      trials.push({ prime: fi.prime, target: fi.target, condition: "nonword", isWord: false });
+    });
+    return trials;
+  }
+
+  // ═══════════════════════════════════════════════════
+  // EXPERIMENT STATE
+  // ═══════════════════════════════════════════════════
+
+  var assignedList = 0; // 1 or 2
+  var practiceTrials = [];
+  var experimentTrials = [];
+  var currentPhase = "practice"; // "practice" or "experiment"
+  var currentTrials = [];
+  var currentTrialIndex = 0;
+  var results = [];
+  var targetOnsetTime = 0;
+  var awaitingResponse = false;
+  var trialTimeoutId = null;
+
+  // Timing constants (ms)
+  var FIXATION_DURATION = 500;
+  var PRIME_DURATION = 250;
+  var ISI_DURATION = 100;
+  var FEEDBACK_DURATION = 1200;
+  var PRACTICE_FEEDBACK_DURATION = 2200;
+  var RESPONSE_TIMEOUT = 5000;
+  var TIMEOUT_MSG_DURATION = 1800;
+
+  // ── DOM refs ──
+  var allScreenIds = [
+    "prescreen-1","prescreen-2","welcome-screen",
+    "transition-screen","trial-screen","results-screen"
+  ];
+  var prescreen1 = document.getElementById("prescreen-1");
+  var prescreen2 = document.getElementById("prescreen-2");
+  var pre1Continue = document.getElementById("pre1-continue");
+  var pre2Continue = document.getElementById("pre2-continue");
+  var welcomeScreen = document.getElementById("welcome-screen");
+  var transitionScreen = document.getElementById("transition-screen");
+  var trialScreen = document.getElementById("trial-screen");
+  var resultsScreen = document.getElementById("results-screen");
+  var startBtn = document.getElementById("start-btn");
+  var beginExpBtn = document.getElementById("begin-experiment-btn");
+  var trialCounter = document.getElementById("trial-counter");
+  var phaseBadge = document.getElementById("phase-badge");
+  var progressFill = document.getElementById("progress-fill");
+  var stimDisplay = document.getElementById("stimulus-display");
+  var promptKeys = document.getElementById("prompt-keys");
+  var touchButtons = document.getElementById("touch-buttons");
+  var btnWord = document.getElementById("btn-word");
+  var btnNonword = document.getElementById("btn-nonword");
+  var feedbackOverlay = document.getElementById("feedback-overlay");
+  var feedbackIcon = document.getElementById("feedback-icon");
+  var feedbackLabel = document.getElementById("feedback-label");
+  var feedbackRt = document.getElementById("feedback-rt");
+  var feedbackHint = document.getElementById("feedback-hint");
+  var timeoutOverlay = document.getElementById("timeout-overlay");
+  var resultsScroll = document.getElementById("results-scroll");
+
+  // ═══════════════════════════════════════════════════
+  // UTILITIES
+  // ═══════════════════════════════════════════════════
+
+  function shuffle(arr) {
+    var a = arr.slice();
+    for (var i = a.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var tmp = a[i]; a[i] = a[j]; a[j] = tmp;
+    }
+    return a;
+  }
+
+  function escapeHtml(str) {
+    var div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  }
+
+  function csvEscape(str) {
+    if (str.indexOf(",") !== -1 || str.indexOf('"') !== -1 || str.indexOf("\n") !== -1) {
+      return '"' + str.replace(/"/g, '""') + '"';
+    }
+    return str;
+  }
+
+  // ═══════════════════════════════════════════════════
+  // LATIN SQUARE: build experiment trial list
+  // ═══════════════════════════════════════════════════
+
+  function buildExperimentTrials(listNum) {
+    var trials = [];
+
+    // Critical items (excluding practice items 1-3 and 21-23)
+    // Remaining: items 4-20 (17 items) + items 24-40 (17 items) = 34 critical
+    // List 1: items 4-20 = related (A), items 24-40 = unrelated (B) → 17 A + 17 B
+    // List 2: items 4-20 = unrelated (B), items 24-40 = related (A) → 17 A + 17 B
+    CRITICAL_ITEMS.forEach(function(ci) {
+      if (PRACTICE_CRITICAL_IDS.indexOf(ci.item) !== -1) return; // skip practice items
+      var isFirstHalf = ci.item <= 20;
+      var useRelated;
+      if (listNum === 1) {
+        useRelated = isFirstHalf;
+      } else {
+        useRelated = !isFirstHalf;
+      }
+      trials.push({
+        item: ci.item,
+        prime: useRelated ? ci.relPrime : ci.unrelPrime,
+        target: ci.target,
+        condition: useRelated ? "A" : "B",
+        isWord: true
+      });
+    });
+
+    // Filler items (excluding practice fillers 41-46)
+    // Remaining: items 47-80 = 34 fillers
+    FILLER_ITEMS.forEach(function(fi) {
+      if (PRACTICE_FILLER_IDS.indexOf(fi.item) !== -1) return; // skip practice items
+      trials.push({
+        item: fi.item,
+        prime: fi.prime,
+        target: fi.target,
+        condition: "nonword",
+        isWord: false
+      });
+    });
+
+    return trials; // 68 trials total: 17 A + 17 B + 34 nonword
+  }
+
+  // ═══════════════════════════════════════════════════
+  // CONSTRAINED RANDOMIZATION
+  // ═══════════════════════════════════════════════════
+  // Rule 1: No more than 4 words or nonwords in a row
+  // Rule 2: No more than 3 condition-A or condition-B in a row
+
+  function passesConstraints(seq) {
+    for (var i = 0; i < seq.length; i++) {
+      // Rule 1: word/nonword runs ≤ 4
+      if (i >= 4) {
+        var lexType = seq[i].condition === "nonword" ? "nw" : "w";
+        var allSame = true;
+        for (var k = 1; k <= 4; k++) {
+          var prev = seq[i - k].condition === "nonword" ? "nw" : "w";
+          if (prev !== lexType) { allSame = false; break; }
+        }
+        if (allSame) return false;
+      }
+      // Rule 2: A or B runs ≤ 3
+      if (i >= 3 && seq[i].condition !== "nonword") {
+        var cond = seq[i].condition;
+        var run = true;
+        for (var m = 1; m <= 3; m++) {
+          if (seq[i - m].condition !== cond) { run = false; break; }
+        }
+        if (run) return false;
+      }
+    }
+    return true;
+  }
+
+  function constrainedShuffle(arr) {
+    for (var attempt = 0; attempt < 2000; attempt++) {
+      var candidate = shuffle(arr);
+      if (passesConstraints(candidate)) return candidate;
+    }
+    return greedyShuffle(arr);
+  }
+
+  function greedyShuffle(arr) {
+    var pool = shuffle(arr);
+    var seq = [];
+    var remaining = pool.slice();
+    var restarts = 0;
+
+    while (remaining.length > 0) {
+      var placed = false;
+      remaining = shuffle(remaining);
+      for (var i = 0; i < remaining.length; i++) {
+        seq.push(remaining[i]);
+        if (passesConstraints(seq)) {
+          remaining.splice(i, 1);
+          placed = true;
+          break;
+        }
+        seq.pop();
+      }
+      if (!placed) {
+        pool = shuffle(arr);
+        seq = [];
+        remaining = pool.slice();
+        restarts++;
+        if (restarts > 100) break;
+      }
+    }
+    return seq;
+  }
+
+  // ═══════════════════════════════════════════════════
+  // SCREEN NAVIGATION
+  // ═══════════════════════════════════════════════════
+
+  function showScreen(screen) {
+    allScreenIds.forEach(function(id) {
+      document.getElementById(id).classList.remove("active");
+    });
+    screen.classList.add("active");
+  }
+
+  pre1Continue.addEventListener("click", function() { showScreen(prescreen2); });
+  pre2Continue.addEventListener("click", function() { showScreen(welcomeScreen); });
+
+  // ═══════════════════════════════════════════════════
+  // START PRACTICE
+  // ═══════════════════════════════════════════════════
+
+  function startPractice() {
+    // Randomly assign list
+    assignedList = Math.random() < 0.5 ? 1 : 2;
+
+    // Build and shuffle practice trials (simple shuffle — only 12 trials)
+    practiceTrials = shuffle(buildPracticeTrials());
+
+    currentPhase = "practice";
+    currentTrials = practiceTrials;
+    currentTrialIndex = 0;
+    results = [];
+
+    phaseBadge.textContent = "Practice";
+    phaseBadge.className = "phase-badge phase-badge-practice";
+
+    showScreen(trialScreen);
+    runTrial();
+  }
+
+  // ═══════════════════════════════════════════════════
+  // START EXPERIMENT
+  // ═══════════════════════════════════════════════════
+
+  function startMainExperiment() {
+    experimentTrials = constrainedShuffle(buildExperimentTrials(assignedList));
+
+    currentPhase = "experiment";
+    currentTrials = experimentTrials;
+    currentTrialIndex = 0;
+    results = [];
+
+    phaseBadge.textContent = "Experiment";
+    phaseBadge.className = "phase-badge phase-badge-experiment";
+
+    showScreen(trialScreen);
+    runTrial();
+  }
+
+  // ═══════════════════════════════════════════════════
+  // TRIAL EXECUTION
+  // ═══════════════════════════════════════════════════
+
+  function runTrial() {
+    var trial = currentTrials[currentTrialIndex];
+    var total = currentTrials.length;
+    var label = currentPhase === "practice" ? "Practice" : "Trial";
+    trialCounter.textContent = label + " " + (currentTrialIndex + 1) + " / " + total;
+    progressFill.style.width = ((currentTrialIndex / total) * 100) + "%";
+    promptKeys.classList.remove("visible");
+    touchButtons.style.pointerEvents = "none";
+    awaitingResponse = false;
+    if (trialTimeoutId) { clearTimeout(trialTimeoutId); trialTimeoutId = null; }
+
+    // Phase 1: Fixation
+    stimDisplay.innerHTML = '<span class="fixation">+</span>';
+    setTimeout(function() {
+      // Phase 2: Prime
+      stimDisplay.innerHTML = '<span class="stimulus-word stimulus-prime">' + escapeHtml(trial.prime) + '</span>';
+      setTimeout(function() {
+        // Phase 3: ISI (blank)
+        stimDisplay.innerHTML = "";
+        setTimeout(function() {
+          // Phase 4: Target
+          stimDisplay.innerHTML = '<span class="stimulus-word stimulus-target">' + escapeHtml(trial.target) + '</span>';
+          targetOnsetTime = performance.now();
+          awaitingResponse = true;
+          promptKeys.classList.add("visible");
+          touchButtons.style.pointerEvents = "auto";
+
+          trialTimeoutId = setTimeout(function() {
+            if (!awaitingResponse) return;
+            handleTimeout();
+          }, RESPONSE_TIMEOUT);
+        }, ISI_DURATION);
+      }, PRIME_DURATION);
+    }, FIXATION_DURATION);
+  }
+
+  // ── Handle timeout ──
+  function handleTimeout() {
+    awaitingResponse = false;
+    if (trialTimeoutId) { clearTimeout(trialTimeoutId); trialTimeoutId = null; }
+    promptKeys.classList.remove("visible");
+    touchButtons.style.pointerEvents = "none";
+
+    var trial = currentTrials[currentTrialIndex];
+
+    if (currentPhase === "experiment") {
+      results.push({
+        trialNum: currentTrialIndex + 1,
+        item: trial.item || "",
+        prime: trial.prime,
+        target: trial.target,
+        condition: trial.condition,
+        response: "timeout",
+        correct: false,
+        rt: null
+      });
+    }
+
+    timeoutOverlay.classList.add("show");
+    setTimeout(function() {
+      timeoutOverlay.classList.remove("show");
+      advanceTrial();
+    }, TIMEOUT_MSG_DURATION);
+  }
+
+  // ── Handle response ──
+  function handleResponse(responseIsWord) {
+    if (!awaitingResponse) return;
+    awaitingResponse = false;
+    if (trialTimeoutId) { clearTimeout(trialTimeoutId); trialTimeoutId = null; }
+
+    var rt = Math.round(performance.now() - targetOnsetTime);
+    var trial = currentTrials[currentTrialIndex];
+    var isCorrect = responseIsWord === trial.isWord;
+
+    if (currentPhase === "experiment") {
+      results.push({
+        trialNum: currentTrialIndex + 1,
+        item: trial.item || "",
+        prime: trial.prime,
+        target: trial.target,
+        condition: trial.condition,
+        response: responseIsWord ? "word" : "nonword",
+        correct: isCorrect,
+        rt: rt
+      });
+    }
+
+    showFeedback(isCorrect, rt, trial.isWord);
+  }
+
+  // ── Show feedback ──
+  function showFeedback(isCorrect, rt, targetIsWord) {
+    promptKeys.classList.remove("visible");
+    touchButtons.style.pointerEvents = "none";
+
+    feedbackOverlay.className = "feedback-overlay show " + (isCorrect ? "correct" : "incorrect");
+    feedbackIcon.textContent = isCorrect ? "✓" : "✗";
+    feedbackLabel.className = "feedback-label " + (isCorrect ? "correct-text" : "incorrect-text");
+    feedbackLabel.textContent = isCorrect ? "Correct" : "Incorrect";
+    feedbackRt.textContent = rt + " ms";
+
+    // During practice, show a teaching hint on incorrect responses
+    if (currentPhase === "practice" && !isCorrect) {
+      var correctKey = targetIsWord ? "F" : "J";
+      var correctLabel = targetIsWord ? "a real word" : "a nonword";
+      feedbackHint.textContent = "The target was " + correctLabel + " — press " + correctKey + " next time.";
+    } else {
+      feedbackHint.textContent = "";
+    }
+
+    var duration = currentPhase === "practice" ? PRACTICE_FEEDBACK_DURATION : FEEDBACK_DURATION;
+
+    setTimeout(function() {
+      feedbackOverlay.className = "feedback-overlay";
+      feedbackHint.textContent = "";
+      advanceTrial();
+    }, duration);
+  }
+
+  // ── Advance to next trial or end phase ──
+  function advanceTrial() {
+    currentTrialIndex++;
+    if (currentTrialIndex < currentTrials.length) {
+      runTrial();
+    } else {
+      progressFill.style.width = "100%";
+      if (currentPhase === "practice") {
+        showScreen(transitionScreen);
+      } else {
+        showResults();
+      }
+    }
+  }
+
+  // ═══════════════════════════════════════════════════
+  // RESULTS
+  // ═══════════════════════════════════════════════════
+
+  function showResults() {
+    var groups = { A: [], B: [], nonword: [] };
+    results.forEach(function(r) { groups[r.condition].push(r); });
+
+    function avg(arr) {
+      if (arr.length === 0) return 0;
+      var sum = 0;
+      arr.forEach(function(v) { sum += v; });
+      return sum / arr.length;
+    }
+
+    function computeStats(group) {
+      var correctTrials = group.filter(function(r) { return r.correct; });
+      var accuracy = group.length > 0 ? (correctTrials.length / group.length * 100) : 0;
+      var meanRt = avg(correctTrials.map(function(r) { return r.rt; }));
+      return { accuracy: accuracy, meanRt: meanRt, total: group.length, numCorrect: correctTrials.length };
+    }
+
+    var statsA = computeStats(groups.A);
+    var statsB = computeStats(groups.B);
+    var statsNW = computeStats(groups.nonword);
+
+    var html = '';
+    html += '<div class="results-header">';
+    html += '<h1>Experiment Complete</h1>';
+    html += '<p>Results across ' + results.length + ' experimental trials · List ' + assignedList + '</p>';
+    html += '</div>';
+
+    html += '<div class="section-title">Mean Response Time (correct trials only)</div>';
+    html += '<div class="stats-grid">';
+    html += buildStatCard("Condition A", statsA.meanRt.toFixed(0), "ms", "cond-a");
+    html += buildStatCard("Condition B", statsB.meanRt.toFixed(0), "ms", "cond-b");
+    html += buildStatCard("Nonwords", statsNW.meanRt.toFixed(0), "ms", "cond-nw");
+    html += '</div>';
+
+    html += '<div class="section-title">Accuracy</div>';
+    html += '<div class="stats-grid">';
+    html += buildStatCard("Condition A", statsA.accuracy.toFixed(1), "% (" + statsA.numCorrect + "/" + statsA.total + ")", "cond-a");
+    html += buildStatCard("Condition B", statsB.accuracy.toFixed(1), "% (" + statsB.numCorrect + "/" + statsB.total + ")", "cond-b");
+    html += buildStatCard("Nonwords", statsNW.accuracy.toFixed(1), "% (" + statsNW.numCorrect + "/" + statsNW.total + ")", "cond-nw");
+    html += '</div>';
+
+    html += '<div class="section-title">Trial-by-trial breakdown</div>';
+    html += '<div class="detail-table"><table>';
+    html += '<tr><th>#</th><th>Item</th><th>Prime</th><th>Target</th><th>Cond</th><th>RT</th><th>Result</th></tr>';
+    results.forEach(function(r) {
+      var badgeClass = r.condition === "A" ? "cond-badge-a" : r.condition === "B" ? "cond-badge-b" : "cond-badge-nw";
+      var condLabel = r.condition === "nonword" ? "NW" : r.condition;
+      var correctClass = r.correct ? "correct-cell" : "incorrect-cell";
+      html += '<tr>';
+      html += '<td>' + r.trialNum + '</td>';
+      html += '<td>' + r.item + '</td>';
+      html += '<td>' + escapeHtml(r.prime) + '</td>';
+      html += '<td>' + escapeHtml(r.target) + '</td>';
+      html += '<td><span class="cond-badge ' + badgeClass + '">' + condLabel + '</span></td>';
+      html += '<td>' + (r.rt !== null ? r.rt + ' ms' : '<span style="color:var(--condition-b)">timeout</span>') + '</td>';
+      html += '<td class="' + correctClass + '">' + (r.response === "timeout" ? '<span style="color:var(--condition-b)">\u2014</span>' : (r.correct ? "\u2713" : "\u2717")) + '</td>';
+      html += '</tr>';
+    });
+    html += '</table></div>';
+
+    html += '<div class="results-actions">';
+    html += '<button class="btn btn-download" id="download-btn">\u2193 Download CSV</button>';
+    html += '<button class="btn btn-restart" id="restart-btn">Run Again</button>';
+    html += '</div>';
+
+    resultsScroll.innerHTML = html;
+    showScreen(resultsScreen);
+
+    document.getElementById("download-btn").addEventListener("click", downloadCSV);
+    document.getElementById("restart-btn").addEventListener("click", function() {
+      showScreen(prescreen1);
+    });
+  }
+
+  function buildStatCard(label, value, unit, cls) {
+    return '<div class="stat-card ' + cls + '">' +
+      '<div class="stat-label">' + label + '</div>' +
+      '<div class="stat-value">' + value + '</div>' +
+      '<div class="stat-unit">' + unit + '</div>' +
+      '</div>';
+  }
+
+  // ═══════════════════════════════════════════════════
+  // CSV DOWNLOAD
+  // ═══════════════════════════════════════════════════
+
+  function downloadCSV() {
+    var header = "trial,item,prime,target,condition,response,correct,rt_ms,list";
+    var rows = [header];
+    results.forEach(function(r) {
+      rows.push([
+        r.trialNum,
+        r.item,
+        csvEscape(r.prime),
+        csvEscape(r.target),
+        r.condition,
+        r.response,
+        r.correct ? "1" : "0",
+        r.rt !== null ? r.rt : "NA",
+        assignedList
+      ].join(","));
+    });
+    var csvContent = rows.join("\n");
+    var blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+    var url = URL.createObjectURL(blob);
+    var link = document.createElement("a");
+    link.href = url;
+    link.download = "lexical_decision_results.csv";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+  }
+
+  // ═══════════════════════════════════════════════════
+  // EVENT LISTENERS
+  // ═══════════════════════════════════════════════════
+
+  document.addEventListener("keydown", function(e) {
+    if (!awaitingResponse) return;
+    var key = e.key.toLowerCase();
+    if (key === "f") { handleResponse(true); }
+    else if (key === "j") { handleResponse(false); }
+  });
+
+  btnWord.addEventListener("click", function() { handleResponse(true); });
+  btnNonword.addEventListener("click", function() { handleResponse(false); });
+
+  startBtn.addEventListener("click", startPractice);
+  beginExpBtn.addEventListener("click", startMainExperiment);
+})();
+</script>
+</body>
+</html>
